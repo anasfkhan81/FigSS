@@ -1,5 +1,5 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix figss: <http://figssample.org/taxonomy/> .
+@prefix figss: <http://example.org/taxonomy/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
@@ -1510,7 +1510,7 @@ figss:EMOTION_IS_OPPONENT a skos:Concept ;
         figss:TERROR_IS_OPPONENT ;
     skos:prefLabel "EMOTION IS OPPONENT" .
 
-figss:figss a skos:ConceptScheme ;
+<http://example.org/taxonomy/> a skos:ConceptScheme ;
     dc:creator "Anas Fahad Khan",
         "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)",
         "Paola Marongiu" ;
