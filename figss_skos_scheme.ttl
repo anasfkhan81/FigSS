@@ -3,29 +3,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
-figss:ANGER_ASSOCIATED_WITH_BITTERNESS skos:broader figss:EMOTION_ASSOCIATED_WITH_BITTERNESS .
-
-figss:COMPASSION_ASSOCIATED_WITH_LISTENING_WITH_THE_HEART skos:broader figss:EMOTION_ASSOCIATED_WITH_LISTENING_WITH_THE_HEART .
-
-figss:DELIGHT_ASSOCIATED_WITH_BRIGHTNESS skos:broader figss:EMOTION_ASSOCIATED_WITH_BRIGHTNESS .
-
-figss:GRIEF_ASSOCIATED_WITH_BITTERNESS skos:broader figss:EMOTION_ASSOCIATED_WITH_BITTERNESS .
 
 figss:HALLUCINATION_IS_LIKE_GHOST skos:broader figss:SYMPTOM_IS_LIKE_EXTERNAL_OBJECT .
-
-figss:HAPPINESS_ASSOCIATED_WITH_SOUND skos:broader figss:EMOTION_ASSOCIATED_WITH_SOUND .
-
-figss:JOY_ASSOCIATED_WITH_BRIGHTNESS skos:broader figss:EMOTION_ASSOCIATED_WITH_BRIGHTNESS .
-
-figss:JOY_ASSOCIATED_WITH_SOUND skos:broader figss:EMOTION_ASSOCIATED_WITH_SOUND .
-
-figss:LAUGHTER_ASSOCIATED_WITH_SOUND skos:broader figss:EMOTION_ASSOCIATED_WITH_SOUND .
-
-figss:PLEASURE_ASSOCIATED_WITH_BRIGHTNESS skos:broader figss:EMOTION_ASSOCIATED_WITH_BRIGHTNESS .
-
-figss:PLEASURE_ASSOCIATED_WITH_COLOUR skos:broader figss:EMOTION_ASSOCIATED_WITH_COLOUR .
-
-figss:PRIDE_ASSOCIATED_WITH_SOUND skos:broader figss:EMOTION_ASSOCIATED_WITH_SOUND .
 
 figss:SYMPTOM_IS_FAULT skos:broader figss:SYMPTOM_IS_IMPERFECTION .
 
@@ -392,9 +371,6 @@ figss:ELATION_IS_INTOXICATION a skos:Concept ;
     skos:inScheme figss: ;
     skos:prefLabel "ELATION IS INTOXICATION" .
 
-figss:EMOTION_ASSOCIATED_WITH_COLOUR skos:broader figss:SYNAESTHESIA .
-
-figss:EMOTION_ASSOCIATED_WITH_LISTENING_WITH_THE_HEART skos:broader figss:SYANESTHESIA .
 
 figss:EMOTION_IS_MADNESS a skos:Concept ;
     skos:broader figss:METAPHOR ;
@@ -1032,7 +1008,8 @@ figss:SORROW_IS_WOUND a skos:Concept ;
 
 figss:SYMPTOM_IS_IMPERFECTION skos:broader figss:METONYMY .
 
-figss:SYMPTOM_IS_LIKE_EXTERNAL_OBJECT skos:broader figss:METONYMY .
+figss:SYMPTOM_IS_LIKE_EXTERNAL_OBJECT skos:broader figss:METONYMY; 
+	skos:narrower figss:HALLUCINATION_IS_LIKE_GHOST.
 
 figss:SYMPTOM_IS_LIKE_FAULT a skos:Concept ;
     dc:creator "Paola Marongiu" ;
@@ -1104,7 +1081,6 @@ figss:EMOTION_ASSOCIATED_WITH_ANGER a skos:Concept ;
     skos:narrower figss:FEAR_ASSOCIATED_WITH_ANGER ;
     skos:prefLabel "EMOTION ASSOCIATED WITH ANGER" .
 
-figss:EMOTION_ASSOCIATED_WITH_BITTERNESS skos:broader figss:SYNAESTHESIA .
 
 figss:EMOTION_ASSOCIATED_WITH_CHANGE_COLOUR a skos:Concept ;
     skos:broader figss:METONYMY ;
@@ -1481,8 +1457,6 @@ figss:EMOTION_ASSOCIATED_WITH_BAD_OPINION_ON_STH a skos:Concept ;
         figss:SORROW_ASSOCIATED_WITH_BAD_OPINION_ON_STH ;
     skos:prefLabel "EMOTION ASSOCIATED WITH BAD OPINION ON STH" .
 
-figss:EMOTION_ASSOCIATED_WITH_BRIGHTNESS skos:broader figss:SYNAESTHESIA .
-
 figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENT a skos:Concept ;
     skos:broader figss:METONYMY ;
     skos:inScheme figss: ;
@@ -1582,7 +1556,6 @@ figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION a skos:Concept ;
         figss:SADNESS_ASSOCIATED_WITH_LACK_OF_MOTION ;
     skos:prefLabel "EMOTION ASSOCIATED WITH LACK OF MOTION" .
 
-figss:EMOTION_ASSOCIATED_WITH_SOUND skos:broader figss:SYNAESTHESIA .
 
 figss:EMOTION_IS_A_BURDEN a skos:Concept ;
     skos:broader figss:METAPHOR ;
