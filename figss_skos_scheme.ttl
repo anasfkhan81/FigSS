@@ -1,1798 +1,1926 @@
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix figss: <http://example.org/taxonomy/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix chroskos: <https://vocabs.ilc4clarin.ilc.cnr.it/vocabularies/chroskos/> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+chroskos:ANXIETY_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "ANXIETY ASSOCIATED WITH LACK OF ENERGY" ;
+    skos:scopeNote "Example: OE. geswencan 'to fatigue' where swencan 'to afflict, harass'" .
 
-figss:HALLUCINATION_IS_LIKE_GHOST skos:broader figss:SYMPTOM_IS_LIKE_EXTERNAL_OBJECT .
+chroskos:BLINDNESS_ASSOCIATED_WITH_DARKNESS a skos:Concept ;
+    skos:broader chroskos:DISEASE_ASSOCIATED_WITH_DARKNESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "BLINDNESS ASSOCIATED WITH DARKNESS" ;
+    skos:scopeNote "Example: Latin caligo" .
 
-figss:SYMPTOM_IS_FAULT skos:broader figss:SYMPTOM_IS_IMPERFECTION .
+chroskos:HALLUCINATION_IS_GHOST a skos:Concept ;
+    skos:broader chroskos:SYMPTOM_IS_OBJECT ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "HALLUCINATION IS GHOST" ;
+    skos:scopeNote "Example: Latin imago" .
 
-figss:AFFLICTION_ASSOCIATED_WITH_EVIL a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_EVIL ;
-    skos:inScheme figss: ;
+chroskos:MONTHLY_EVENT_FOR_MENSTRUAL_CYCLE a skos:Concept ;
+    skos:broader chroskos:FREQUENCY_FOR_BODY_PROCESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "MONTHLY EVENT FOR MENSTRUAL CYCLE" ;
+    skos:scopeNote "Example: Latin menstrua" .
+
+chroskos:SADNESS_ASSOCIATED_WITH_BEING_WITHOUT_GLORY a skos:Concept ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_BEING_WITHOUT_GLORY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "SADNESS ASSOCIATED WITH BEING WITHOUT GLORY" ;
+    skos:scopeNote "Example: OE hreð-leas 'without glory'.  'joyless'" .
+
+chroskos:SADNESS_ASSOCIATED_WITH_BEING_WITHOUT_PROTECTION a skos:Concept ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_BEING_WITHOUT_PROTECTION ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "SADNESS ASSOCIATED WITH BEING WITHOUT PROTECTION" ;
+    skos:scopeNote "Example: OE hleo-leas 'without shelter', 'cheerless' (Source: A Handy Anglo-Saxon Dictionary)" .
+
+chroskos:SYMPTOM_IS_FAULT a skos:Concept ;
+    skos:broader chroskos:SYMPTOM_IS_IMPERFECTION ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "SYMPTOM IS FAULT" ;
+    skos:scopeNote "Example: Latin vitium" .
+
+chroskos:AFFLICTION_ASSOCIATED_WITH_EVIL a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_EVIL ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION ASSOCIATED WITH EVIL" .
 
-figss:AFFLICTION_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
-    skos:inScheme figss: ;
+chroskos:AFFLICTION_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION ASSOCIATED WITH LACK OF ENERGY" .
 
-figss:AFFLICTION_IS_A_BURDEN a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_A_BURDEN ;
-    skos:inScheme figss: ;
+chroskos:AFFLICTION_IS_A_BURDEN a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_A_BURDEN ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION IS A BURDEN" .
 
-figss:AFFLICTION_IS_CAPTIVITY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_CAPTIVITY ;
-    skos:inScheme figss: ;
+chroskos:AFFLICTION_IS_CAPTIVITY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_CAPTIVITY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION IS CAPTIVITY" .
 
-figss:AFFLICTION_IS_NARROWNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_NARROWNESS ;
-    skos:inScheme figss: ;
+chroskos:AFFLICTION_IS_NARROWNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_NARROWNESS ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION IS NARROWNESS" .
 
-figss:AFFLICTION_IS_PERSECUTION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_OPPONENT ;
-    skos:inScheme figss: ;
+chroskos:AFFLICTION_IS_PERSECUTION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_OPPONENT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION IS PERSECUTION" ;
     skos:scopeNote "Example: OE ehtan can mean 'to afflict' as well as 'to persecute'" .
 
-figss:AFFLICTION_IS_WOUNDBREAK a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
+chroskos:AFFLICTION_IS_WOUNDBREAK a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION IS WOUND/BREAK" .
 
-figss:AFFLICTION_IS_WOUNDPAIN a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
+chroskos:AFFLICTION_IS_WOUNDPAIN a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION IS WOUND/PAIN" .
 
-figss:AFFLICTION_IS_WOUNDPANG a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
+chroskos:AFFLICTION_IS_WOUNDPANG a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION IS WOUND/PANG" .
 
-figss:AFFLICTION_IS_WOUNDSICKNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
+chroskos:AFFLICTION_IS_WOUNDSICKNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AFFLICTION IS WOUND/SICKNESS" .
 
-figss:ANGER_ASSOCIATED_WITH_AFFLICTION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_AFFLICTION ;
-    skos:inScheme figss: ;
+chroskos:ANGER_ASSOCIATED_WITH_AFFLICTION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_AFFLICTION ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANGER ASSOCIATED WITH AFFLICTION" ;
     skos:scopeNote "Example: OE weamod 'anger' from wea 'trouble, affliction', (e.g., 'Ne réce ðú ná weámódes wífes worda' 'you are not to care for an angry woman's words,'); OE torn 'violent emotion of anger; violent emotion of distress, affliction' (e.g., 'Gristbitian mid tóðon torn þoligende gnashing their teeth in despair'," .
 
-figss:ANGER_IS_ENERGYSTRENGTH a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_ENERGYSTRENGTH ;
-    skos:inScheme figss: ;
+chroskos:ANGER_IS_ENERGYSTRENGTH a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_ENERGYSTRENGTH ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANGER IS ENERGY/STRENGTH" .
 
-figss:ANGER_IS_FIRE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_FIRE ;
-    skos:inScheme figss: ;
+chroskos:ANGER_IS_FIRE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_FIRE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANGER IS FIRE" ;
     skos:scopeNote "Example: OE onǣlan, (on)bǣrnan 'to burn' (e.g., \"hu lange drihtyn yrsast þu on ende byrnyð swa swa fyr yrre þin\")" .
 
-figss:ANGER_IS_HEAT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_HEAT ;
-    skos:inScheme figss: ;
+chroskos:ANGER_IS_HEAT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_HEAT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANGER IS HEAT" ;
     skos:scopeNote "Example: OE hatheort 'angry' is a compound made up of the words 'hat' and 'heort'" .
 
-figss:ANGER_IS_MITIGATION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_MITIGATION ;
-    skos:inScheme figss: ;
+chroskos:ANGER_IS_MITIGATION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_MITIGATION ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANGER IS MITIGATION" .
 
-figss:ANGER_IS_SUBSTANCE_SEND_OUT_POUR a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SUBSTANCE ;
-    skos:inScheme figss: ;
+chroskos:ANGER_IS_SUBSTANCE_SEND_OUT_POUR a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SUBSTANCE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANGER IS SUBSTANCE (SEND OUT, POUR)" ;
     skos:scopeNote "Example: OE asendan 'to send away'" .
 
-figss:ANGER_IS_SWELLING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SWELLING ;
-    skos:inScheme figss: ;
+chroskos:ANGER_IS_SWELLING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SWELLING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANGER IS SWELLING" ;
     skos:scopeNote "Example: OE gebelgan ' to cause to swell with anger';  þindan ‘to swell' c.f., Caroline Gevaert  doctoral thesis" .
 
-figss:ANUS_IS_LIKE_RING a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:ANUS_IS_LIKE_RING a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANUS IS LIKE RING" ;
     skos:scopeNote "Example: Latin anus" .
 
-figss:ANXIETY_ASSOCIATED_WITH_IN_THE_MIND a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_IN_THE_MIND ;
-    skos:inScheme figss: ;
+chroskos:ANXIETY_ASSOCIATED_WITH_IN_THE_MIND a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_IN_THE_MIND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANXIETY ASSOCIATED WITH IN THE MIND" .
 
-figss:ANXIETY_IS_ENERGYSTRENGTH a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_ENERGYSTRENGTH ;
-    skos:inScheme figss: ;
+chroskos:ANXIETY_IS_ENERGYSTRENGTH a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_ENERGYSTRENGTH ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ANXIETY IS ENERGY/STRENGTH" .
 
-figss:ANXIETY_IS_NARROWNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_NARROWNESS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "ANXIETY IS NARROWNESS" .
+chroskos:ANXIETY_IS_NARROWNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_NARROWNESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "ANXIETY IS NARROWNESS" ;
+    skos:scopeNote "Example: OE angsum 'narrowness', 'anxiety'" .
 
-figss:ANXIETY_IS_WOUNDPANG a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
-    skos:prefLabel "ANXIETY IS WOUND/PANG" .
+chroskos:ANXIETY_IS_WOUNDPANG a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "ANXIETY IS WOUND/PANG" ;
+    skos:scopeNote "Example: OE þreanied 'distress' from þrēa 'threat, rebuke, affliction, punishment' + nied 'force'" .
 
-figss:ARDOUR_IS_FIRE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_FIRE ;
-    skos:inScheme figss: ;
+chroskos:ARDOUR_IS_FIRE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_FIRE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ARDOUR IS FIRE" ;
     skos:scopeNote "Example: OE ǣling 'burning, burning of the mind, ardour; ardor, flagrantia animi'" .
 
-figss:ARDOUR_IS_HEAT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_HEAT ;
-    skos:inScheme figss: ;
+chroskos:ARDOUR_IS_HEAT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_HEAT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ARDOUR IS HEAT" ;
     skos:scopeNote "Example: OE hatlice from hat 'hot'" .
 
-figss:ARDOUR_IS_PRICKING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_PRICKING ;
-    skos:inScheme figss: ;
+chroskos:ARDOUR_IS_PRICKING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_PRICKING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ARDOUR IS PRICKING" ;
-    skos:scopeNote "Example: OE  onbryrdan 'to animate, to inspite' a composition of on 'into' and‎ bryrdan meaning 'to prick'" .
+    skos:scopeNote "Example: OE  onbryrdan 'to animate, to inspite' a composition of on 'into' and‎ bryrdan meaning 'to prick'",
+        "Example: OE onbryrdan 'to animate, to inspite' a composition of on 'into' and‎ bryrdan meaning 'to prick'" .
 
-figss:ASTONISHMENT_ASSOCIATED_WITH_MOTION_TO_AND_FRO a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_MOTION_TO_AND_FRO ;
-    skos:inScheme figss: ;
+chroskos:ASTONISHMENT_ASSOCIATED_WITH_MOTION_TO_AND_FRO a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_MOTION_TO_AND_FRO ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ASTONISHMENT ASSOCIATED WITH MOTION TO AND FRO" .
 
-figss:AWE_ASSOCIATED_WITH_MOTION_BACK a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_MOTION_BACK ;
-    skos:inScheme figss: ;
+chroskos:AWE_ASSOCIATED_WITH_MOTION_BACK a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_MOTION_BACK ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AWE ASSOCIATED WITH MOTION BACK" .
 
-figss:AWE_ASSOCIATED_WITH_REVERENCE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_REVERENCE ;
-    skos:inScheme figss: ;
+chroskos:AWE_ASSOCIATED_WITH_REVERENCE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_REVERENCE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AWE ASSOCIATED WITH REVERENCE" .
 
-figss:AWE_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS ;
-    skos:inScheme figss: ;
+chroskos:AWE_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "AWE ASSOCIATED WITH SLOW MOTION/SLUGGISHNESS/DARKNESS" .
 
-figss:BACKBONE_IS_LIKE_THORN a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:BACKBONE_IS_LIKE_THORN a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "BACKBONE IS LIKE THORN" ;
     skos:scopeNote "Example: Latin spina" .
 
-figss:BLINDNESS_IS_DARKNESS a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:DISEASE_IS_EXTERNAL_CONCEPT ;
-    skos:inScheme figss: ;
+chroskos:BLINDNESS_IS_DARKNESS a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:DISEASE_IS_EXTERNAL_CONCEPT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "BLINDNESS IS DARKNESS" ;
     skos:scopeNote "Example: Latin caligo" .
 
-figss:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT a skos:Concept ;
-    skos:inScheme figss: ;
-    skos:narrower figss:DUCT_IS_LIKE_PATH,
-        figss:MEMBRANE_IS_LIKE_TUNIC,
-        figss:MOLAR_TOOTH_IS_LIKE_MILLSTONE ;
-    skos:prefLabel "BODY PART FUNCTIONS LIKE EXTERNAL OBJECT" .
-
-figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT a skos:Concept ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ANUS_IS_LIKE_RING,
-        figss:BACKBONE_IS_LIKE_THORN,
-        figss:CANINE_IS_LIKE_DOG_TOOTH,
-        figss:FOLLICLE_IS_LIKE_SEEDSACK,
-        figss:FRECKLE_IS_LIKE_LENTIL,
-        figss:KNEECAP_IS_LIKE_SMALL_BOWL,
-        figss:PENIS_IS_LIKE_STALK,
-        figss:SCROTUM_IS_LIKE_LEATHER_SACK_FOR_ARROWS,
-        figss:SHIN_BONE_IS_LIKE_FLUTE,
-        figss:TONSIL_IS_LIKE_POLE ;
-    skos:prefLabel "BODY PART IS LIKE EXTERNAL OBJECT" .
-
-figss:CANCER_IS_LIKE_CRAB a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:DISEASE_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:CANCER_IS_LIKE_CRAB a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:DISEASE_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:DISEASE_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "CANCER IS LIKE CRAB" ;
     skos:scopeNote "Example: Latin cancer" .
 
-figss:CANINE_IS_LIKE_DOG_TOOTH a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:CANINE_IS_LIKE_DOG_TOOTH a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "CANINE IS LIKE DOG TOOTH" ;
     skos:scopeNote "Example: Latin caninus" .
 
-figss:COMPASSION_ASSOCIATED_WITH_EMPATHY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_EMPATHY ;
-    skos:inScheme figss: ;
+chroskos:COMPASSION_ASSOCIATED_WITH_EMPATHY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_EMPATHY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "COMPASSION ASSOCIATED WITH EMPATHY" .
 
-figss:COMPASSION_ASSOCIATED_WITH_HONOUR a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_HONOUR ;
-    skos:inScheme figss: ;
+chroskos:COMPASSION_ASSOCIATED_WITH_HONOUR a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_HONOUR ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "COMPASSION ASSOCIATED WITH HONOUR" .
 
-figss:COMPASSION_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
-    skos:inScheme figss: ;
+chroskos:COMPASSION_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "COMPASSION ASSOCIATED WITH LACK OF ENERGY" .
 
-figss:CONFIDENCE_IS_SWELLING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SWELLING ;
-    skos:inScheme figss: ;
+chroskos:CONFIDENCE_IS_SWELLING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SWELLING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "CONFIDENCE IS SWELLING" .
 
-figss:CONTEMPT_IS_OVERLOOKING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_OVERLOOKING ;
-    skos:inScheme figss: ;
+chroskos:CONTEMPT_IS_OVERLOOKING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_OVERLOOKING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "CONTEMPT IS OVERLOOKING" ;
     skos:scopeNote "Example: OE forseon 'to despise' made up of for- 'to look away, up' seon 'to see'" .
 
-figss:CONTENT_ASSOCIATED_WITH_EASYNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_EASYNESS ;
-    skos:inScheme figss: ;
+chroskos:CONTENT_ASSOCIATED_WITH_EASYNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_EASYNESS ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "CONTENT ASSOCIATED WITH EASYNESS" .
 
-figss:DESPAIR_ASSOCIATED_WITH_BAD_OPINION_ON_STH a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_BAD_OPINION_ON_STH ;
-    skos:inScheme figss: ;
+chroskos:DESPAIR_ASSOCIATED_WITH_BAD_OPINION_ON_STH a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_BAD_OPINION_ON_STH ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "DESPAIR ASSOCIATED WITH BAD OPINION ON STH" .
 
-figss:DESPAIR_ASSOCIATED_WITH_HOPELESSNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_HOPELESSNESS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "DESPAIR ASSOCIATED WITH HOPELESSNESS" .
+chroskos:DESPAIR_ASSOCIATED_WITH_HOPELESSNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_HOPELESSNESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "DESPAIR ASSOCIATED WITH HOPELESSNESS" ;
+    skos:scopeNote "Example: OE orwena 'hopeless' 'despairing'" .
 
-figss:DESPAIR_ASSOCIATED_WITH_WITHOUT_HOPE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_WITHOUT_HOPE ;
-    skos:inScheme figss: ;
+chroskos:DESPAIR_ASSOCIATED_WITH_WITHOUT_HOPE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_WITHOUT_HOPE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "DESPAIR ASSOCIATED WITH WITHOUT HOPE" .
 
-figss:DISEASE_IS_DARKNESSEXTERNAL_CONCEPT a skos:Concept ;
-    skos:inScheme figss: ;
-    skos:narrower figss:BLINDNESS_IS_DARKNESS ;
+chroskos:DISEASE_ASSOCIATED_WITH_DARKNESS a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "DISEASE ASSOCIATED WITH DARKNESS" .
+
+chroskos:DISEASE_IS_DARKNESSEXTERNAL_CONCEPT a skos:Concept ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:BLINDNESS_IS_DARKNESS ;
     skos:prefLabel "DISEASE IS DARKNESS/EXTERNAL CONCEPT" .
 
-figss:DISEASE_IS_EXTERNAL_CONCEPT skos:broader figss:METONYMY .
+chroskos:DISEASE_IS_EXTERNAL_CONCEPT skos:broader chroskos:METONYMY .
 
-figss:DISEASE_IS_IMPERFECTION a skos:Concept ;
-    skos:inScheme figss: ;
-    skos:narrower figss:SYMPTOM_IS_LIKE_FAULT ;
+chroskos:DISEASE_IS_IMPERFECTION a skos:Concept ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:SYMPTOM_IS_LIKE_FAULT ;
     skos:prefLabel "DISEASE IS IMPERFECTION" .
 
-figss:DISEASE_IS_LIKE_EXTERNAL_OBJECT a skos:Concept ;
-    skos:inScheme figss: ;
-    skos:narrower figss:CANCER_IS_LIKE_CRAB,
-        figss:SKIN_DISEASE_IS_LIKE_SPIDER ;
-    skos:prefLabel "DISEASE IS LIKE EXTERNAL OBJECT" .
-
-figss:DISGUST_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
-    skos:inScheme figss: ;
+chroskos:DISGUST_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "DISGUST ASSOCIATED WITH LACK OF ENERGY" ;
     skos:scopeNote "Example: OE æþryttan 'to weary, to disgust'" .
 
-figss:DISGUST_IS_STIFF a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_STIFF ;
-    skos:inScheme figss: ;
+chroskos:DISGUST_IS_STIFF a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_STIFF ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "DISGUST IS STIFF" .
 
-figss:DISOBEDIENCE_IS_OVER-HEARING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_OVER-HEARING ;
-    skos:inScheme figss: ;
+chroskos:DISOBEDIENCE_IS_OVER-HEARING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_OVER-HEARING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "DISOBEDIENCE IS OVER-HEARING" ;
     skos:scopeNote "Example: OE ofer-hiernes 'disobedience' compound literally meaning 'delaying hearing'" .
 
-figss:DISTRESS_IS_HEAT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_HEAT ;
-    skos:inScheme figss: ;
+chroskos:DISTRESS_IS_HEAT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_HEAT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "DISTRESS IS HEAT" .
 
-figss:DISTRESS_IS_NARROWNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_NARROWNESS ;
-    skos:inScheme figss: ;
+chroskos:DISTRESS_IS_NARROWNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_NARROWNESS ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "DISTRESS IS NARROWNESS" .
 
-figss:DISTRESS_IS_OPPONENT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_OPPONENT ;
-    skos:inScheme figss: ;
+chroskos:DISTRESS_IS_OPPONENT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_OPPONENT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "DISTRESS IS OPPONENT" .
 
-figss:DUCT_IS_LIKE_PATH a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:DUCT_IS_LIKE_PATH a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "DUCT IS LIKE PATH" ;
     skos:scopeNote "Example: Latin iter" .
 
-figss:ELATION_ASSOCIATED_WITH_PASSSION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_PASSSION ;
-    skos:inScheme figss: ;
+chroskos:ELATION_ASSOCIATED_WITH_PASSSION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_PASSSION ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ELATION ASSOCIATED WITH PASSSION" .
 
-figss:ELATION_IS_INTOXICATION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_INTOXICATION ;
-    skos:inScheme figss: ;
+chroskos:ELATION_IS_INTOXICATION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_INTOXICATION ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ELATION IS INTOXICATION" .
 
+chroskos:EMOTION_ASSOCIATED_WITH_BEING_WITHOUT_GLORY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "EMOTION ASSOCIATED WITH BEING WITHOUT GLORY" .
 
-figss:EMOTION_IS_MADNESS a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
+chroskos:EMOTION_ASSOCIATED_WITH_BEING_WITHOUT_PROTECTION a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "EMOTION ASSOCIATED WITH BEING WITHOUT PROTECTION" .
+
+chroskos:EMOTION_IS_MADNESS a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "EMOTION IS MADNESS" .
 
-figss:EMOTION_IS_SUBSTANCE_IN_A_CONTAINER a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SUBSTANCE ;
-    skos:inScheme figss: ;
+chroskos:EMOTION_IS_SUBSTANCE_IN_A_CONTAINER a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SUBSTANCE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "EMOTION IS SUBSTANCE IN A CONTAINER" .
 
-figss:EMOTION_RESULTS_IN_OPPONENT a skos:Concept ;
-    skos:broader figss:RESULTATIVE_METONYMY ;
-    skos:inScheme figss: ;
+chroskos:EMOTION_RESULTS_IN_OPPONENT a skos:Concept ;
+    skos:broader chroskos:RESULTATIVE_METONYMY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "EMOTION RESULTS IN OPPONENT" .
 
-figss:ENJOYMENT_ASSOCIATED_WITH_JUMP a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_JUMP ;
-    skos:inScheme figss: ;
+chroskos:ENJOYMENT_ASSOCIATED_WITH_JUMP a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_JUMP ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ENJOYMENT ASSOCIATED WITH JUMP" ;
     skos:scopeNote "Example: OE hoppetan 'to hop' -> 'to jump (for joy)'" .
 
-figss:ENVY_ASSOCIATED_WITH_MALICE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_MALICE ;
-    skos:inScheme figss: ;
-    skos:prefLabel "ENVY ASSOCIATED WITH MALICE" .
+chroskos:ENVY_ASSOCIATED_WITH_MALICE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_MALICE ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "ENVY ASSOCIATED WITH MALICE" ;
+    skos:scopeNote "Example: OE æfest 'envy', 'malice'" .
 
-figss:ENVY_ASSOCIATED_WITH_PALLOR a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_PALLOR ;
-    skos:inScheme figss: ;
+chroskos:ENVY_ASSOCIATED_WITH_PALLOR a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_PALLOR ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ENVY ASSOCIATED WITH PALLOR" ;
     skos:scopeNote "Example: OE blatan 'to be pale as with envy'" .
 
-figss:ENVY_IS_ENERGYSTRENGTH a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_ENERGYSTRENGTH ;
-    skos:inScheme figss: ;
-    skos:prefLabel "ENVY IS ENERGY/STRENGTH" .
+chroskos:ENVY_IS_ENERGYSTRENGTH a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_ENERGYSTRENGTH ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "ENVY IS ENERGY/STRENGTH" ;
+    skos:scopeNote "Example: OE elnung 'zeal, jealousy' from  ellen ('zeal, strength, power') +‎ -ung" .
 
-figss:ENVY_IS_FIRE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_FIRE ;
-    skos:inScheme figss: ;
+chroskos:ENVY_IS_FIRE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_FIRE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ENVY IS FIRE" .
 
-figss:ENVY_IS_NARROWNESSANXIETY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_NARROWNESSANXIETY ;
-    skos:inScheme figss: ;
+chroskos:ENVY_IS_NARROWNESSANXIETY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_NARROWNESSANXIETY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ENVY IS NARROWNESS/ANXIETY" .
 
-figss:FEAR_ASSOCIATED_WITH_ANGER a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_ANGER ;
-    skos:inScheme figss: ;
+chroskos:FEAR_ASSOCIATED_WITH_ANGER a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_ANGER ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR ASSOCIATED WITH ANGER" .
 
-figss:FEAR_ASSOCIATED_WITH_CHANGE_COLOUR a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_CHANGE_COLOUR ;
-    skos:inScheme figss: ;
-    skos:prefLabel "FEAR ASSOCIATED WITH CHANGE (COLOUR)" .
+chroskos:FEAR_ASSOCIATED_WITH_CHANGE_COLOUR a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_CHANGE_COLOUR ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "FEAR ASSOCIATED WITH CHANGE (COLOUR)" ;
+    skos:scopeNote "Example: OE ablacian 'to turn pale from fear, weakness' where blāc 'pale'" .
 
-figss:FEAR_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
-    skos:inScheme figss: ;
+chroskos:FEAR_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR ASSOCIATED WITH LACK OF ENERGY" .
 
-figss:FEAR_ASSOCIATED_WITH_LACK_OF_MOTION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION ;
-    skos:inScheme figss: ;
-    skos:prefLabel "FEAR ASSOCIATED WITH LACK OF MOTION" .
+chroskos:FEAR_ASSOCIATED_WITH_LACK_OF_MOTION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "FEAR ASSOCIATED WITH LACK OF MOTION" ;
+    skos:scopeNote "Example: OE. asittan 'to sit up' and 'to be afraid (of something)' where sittan means 'to sit, to stay'" .
 
-figss:FEAR_ASSOCIATED_WITH_LACK_OF_MOVEMENT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENT ;
-    skos:inScheme figss: ;
-    skos:prefLabel "FEAR ASSOCIATED WITH LACK OF MOVEMENT" .
+chroskos:FEAR_ASSOCIATED_WITH_LACK_OF_MOVEMENT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENT ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "FEAR ASSOCIATED WITH LACK OF MOVEMENT" ;
+    skos:scopeNote "Example: OE. hereblēað 'fearful' from here 'predatory band' and blēað 'timid, without force'" .
 
-figss:FEAR_ASSOCIATED_WITH_MOTION_BACK a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_MOTION_BACK ;
-    skos:inScheme figss: ;
-    skos:prefLabel "FEAR ASSOCIATED WITH MOTION BACK" .
+chroskos:FEAR_ASSOCIATED_WITH_MOTION_BACK a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_MOTION_BACK ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "FEAR ASSOCIATED WITH MOTION BACK" ;
+    skos:scopeNote "Example: OE. wandian 'turn aside' and 'hesitate' (Diaz Vera 2011)" .
 
-figss:FEAR_ASSOCIATED_WITH_MOTION_BACKWARDS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_MOTION_BACKWARDS ;
-    skos:inScheme figss: ;
+chroskos:FEAR_ASSOCIATED_WITH_MOTION_BACKWARDS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_MOTION_BACKWARDS ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR ASSOCIATED WITH MOTION BACKWARDS" .
 
-figss:FEAR_ASSOCIATED_WITH_MOTION_DOWNWARDS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_MOTION_DOWNWARDS ;
-    skos:inScheme figss: ;
+chroskos:FEAR_ASSOCIATED_WITH_MOTION_DOWNWARDS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_MOTION_DOWNWARDS ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR ASSOCIATED WITH MOTION DOWNWARDS" .
 
-figss:FEAR_ASSOCIATED_WITH_RIGIDITY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_RIGIDITY ;
-    skos:inScheme figss: ;
-    skos:prefLabel "FEAR ASSOCIATED WITH RIGIDITY" .
+chroskos:FEAR_ASSOCIATED_WITH_RIGIDITY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_RIGIDITY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "FEAR ASSOCIATED WITH RIGIDITY" ;
+    skos:scopeNote "Example: OE. stifian 'to become rigid', 'stiffen with fear' (Diaz Vera 2011)" .
 
-figss:FEAR_ASSOCIATED_WITH_SHOUT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_SHOUT ;
-    skos:inScheme figss: ;
+chroskos:FEAR_ASSOCIATED_WITH_SHOUT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_SHOUT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR ASSOCIATED WITH SHOUT" .
 
-figss:FEAR_ASSOCIATED_WITH_TEMPERATURE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_TEMPERATURE ;
-    skos:inScheme figss: ;
+chroskos:FEAR_ASSOCIATED_WITH_TEMPERATURE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_TEMPERATURE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR ASSOCIATED WITH TEMPERATURE" .
 
-figss:FEAR_ASSOCIATED_WITH_TIMIDITY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_TIMIDITY ;
-    skos:inScheme figss: ;
-    skos:prefLabel "FEAR ASSOCIATED WITH TIMIDITY" .
+chroskos:FEAR_ASSOCIATED_WITH_TIMIDITY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_TIMIDITY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "FEAR ASSOCIATED WITH TIMIDITY" ;
+    skos:scopeNote "Example: OE sceoh" .
 
-figss:FEAR_ASSOCIATED_WITH_TORPOR a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_TORPOR ;
-    skos:inScheme figss: ;
+chroskos:FEAR_ASSOCIATED_WITH_TORPOR a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_TORPOR ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR ASSOCIATED WITH TORPOR" .
 
-figss:FEAR_ASSOCIATED_WITH_TO_SHRINK a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_TO_SHRINK ;
-    skos:inScheme figss: ;
+chroskos:FEAR_ASSOCIATED_WITH_TO_SHRINK a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_TO_SHRINK ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR ASSOCIATED WITH TO SHRINK" .
 
-figss:FEAR_ASSOCIATED_WITH_TREMBLING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_TREMBLING ;
-    skos:inScheme figss: ;
-    skos:prefLabel "FEAR ASSOCIATED WITH TREMBLING" .
+chroskos:FEAR_ASSOCIATED_WITH_TREMBLING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_TREMBLING ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "FEAR ASSOCIATED WITH TREMBLING" ;
+    skos:scopeNote "Example: OE. cwacian 'to tremble (particularly from fear)', " .
 
-figss:FEAR_ASSOCIATED_WITH_UNCERTAINTY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_UNCERTAINTY ;
-    skos:inScheme figss: ;
-    skos:prefLabel "FEAR ASSOCIATED WITH UNCERTAINTY" .
+chroskos:FEAR_ASSOCIATED_WITH_UNCERTAINTY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_UNCERTAINTY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "FEAR ASSOCIATED WITH UNCERTAINTY" ;
+    skos:scopeNote "Example: OE. inca 'fear, uncertainty'" .
 
-figss:FEAR_IS_CHANGE_SIZE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_CHANGE_IN_SIZE ;
-    skos:inScheme figss: ;
+chroskos:FEAR_IS_CHANGE_SIZE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_CHANGE_IN_SIZE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR IS CHANGE (SIZE)" .
 
-figss:FEAR_IS_OPPONENT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_OPPONENT ;
-    skos:inScheme figss: ;
+chroskos:FEAR_IS_OPPONENT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_OPPONENT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR IS OPPONENT" .
 
-figss:FEAR_IS_WOUNDBREAK a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
+chroskos:FEAR_IS_WOUNDBREAK a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR IS WOUND/BREAK" .
 
-figss:FEAR_IS_WOUNDPAIN a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
+chroskos:FEAR_IS_WOUNDPAIN a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR IS WOUND/PAIN" .
 
-figss:FEAR_IS_WOUNDPANG a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
+chroskos:FEAR_IS_WOUNDPANG a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FEAR IS WOUND/PANG" .
 
-figss:FERVOUR_IS_ENERGYSTRENGTH a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_ENERGYSTRENGTH ;
-    skos:inScheme figss: ;
+chroskos:FERVOUR_IS_ENERGYSTRENGTH a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_ENERGYSTRENGTH ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FERVOUR IS ENERGY/STRENGTH" .
 
-figss:FOLLICLE_IS_LIKE_SEEDSACK a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:FOLLICLE_IS_LIKE_SEEDSACK a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FOLLICLE IS LIKE SEEDSACK" ;
     skos:scopeNote "Example: Latin folliculus" .
 
-figss:FRECKLE_IS_LIKE_LENTIL a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:FRECKLE_IS_LIKE_LENTIL a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "FRECKLE IS LIKE LENTIL" ;
     skos:scopeNote "Example: Latin lenticula" .
 
-figss:GRIEF_ASSOCIATED_WITH_MENTAL_DISTRESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_MENTAL_DISTRESS ;
-    skos:inScheme figss: ;
+chroskos:FREQUENCY_FOR_BODY_PROCESS a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "FREQUENCY FOR BODY PROCESS" .
+
+chroskos:GRIEF_ASSOCIATED_WITH_MENTAL_DISTRESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_MENTAL_DISTRESS ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GRIEF ASSOCIATED WITH MENTAL DISTRESS" .
 
-figss:GRIEF_IS_A_BURDEN a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_A_BURDEN ;
-    skos:inScheme figss: ;
-    skos:prefLabel "GRIEF IS A BURDEN" .
+chroskos:GRIEF_IS_A_BURDEN a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_A_BURDEN ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "GRIEF IS A BURDEN" ;
+    skos:scopeNote "Example: OE forberan" .
 
-figss:GRIEF_IS_HEAVINESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_HEAVINESS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "GRIEF IS HEAVINESS" .
+chroskos:GRIEF_IS_HEAVINESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_HEAVINESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "GRIEF IS HEAVINESS" ;
+    skos:scopeNote "Example: OE hefignes 'heaviness, slowness, weight, grief, affliction, dullness of the body or senses' from hefig 'heavy' + -nes" .
 
-figss:GRIEF_IS_NARROWNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_NARROWNESS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "GRIEF IS NARROWNESS" .
+chroskos:GRIEF_IS_NARROWNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_NARROWNESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "GRIEF IS NARROWNESS" ;
+    skos:scopeNote "Example: OE nearunes 'a strait, a narrow space, a place of small extent' and 'distress, anxiety, tribulation, trouble, grief' " .
 
-figss:GRIEF_IS_PAIN a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_PAIN ;
-    skos:inScheme figss: ;
-    skos:prefLabel "GRIEF IS PAIN" .
+chroskos:GRIEF_IS_PAIN a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_PAIN ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "GRIEF IS PAIN" ;
+    skos:scopeNote "Example: OE sarnes 'pain (of body)', 'grief, sorrow'" .
 
-figss:GRIEF_IS_TURBIDNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_TURBIDNESS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "GRIEF IS TURBIDNESS" .
+chroskos:GRIEF_IS_TURBIDNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_TURBIDNESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "GRIEF IS TURBIDNESS" ;
+    skos:scopeNote "Example: OE drof 'turbid (of water)', 'troubled'" .
 
-figss:GRIEF_IS_WOUND a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
-    skos:prefLabel "GRIEF IS WOUND" .
+chroskos:GRIEF_IS_WOUND a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "GRIEF IS WOUND" ;
+    skos:scopeNote "Example: OE of-hearmian 'to cause grief' where hearmian 'to injure, harm'" .
 
-figss:GRIEF_IS_WOUND_IN_THE_CHEST a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
+chroskos:GRIEF_IS_WOUND_IN_THE_CHEST a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GRIEF IS WOUND (IN THE CHEST)" .
 
-figss:GUILT_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY ;
-    skos:inScheme figss: ;
+chroskos:GUILT_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GUILT ASSOCIATED WITH LACK OF MOVEMENT/CAPTIVITY" .
 
-figss:GUILT_CAUSES_CAPTIVITY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_CAUSES_CAPTIVITY ;
-    skos:inScheme figss: ;
+chroskos:GUILT_CAUSES_CAPTIVITY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_CAUSES_CAPTIVITY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GUILT CAUSES CAPTIVITY" ;
-    skos:scopeNote "gebundon:Þa sende God his apostolas and heora æftergengan to gebundenum mancynne, and het hí untígan, and to him lædan" .
+    skos:scopeNote "Example: OE gebundon 'Þa sende God his apostolas and heora æftergengan to gebundenum mancynne, and het hí untígan, and to him lædan'",
+        "gebundon:Þa sende God his apostolas and heora æftergengan to gebundenum mancynne, and het hí untígan, and to him lædan" .
 
-figss:GUILT_IS_A_BURDEN a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_A_BURDEN ;
-    skos:inScheme figss: ;
+chroskos:GUILT_IS_A_BURDEN a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_A_BURDEN ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GUILT IS A BURDEN" .
 
-figss:GUILT_IS_A_DIRTY_OBJECT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_A_DIRTY_OBJECT ;
-    skos:inScheme figss: ;
-    skos:prefLabel "GUILT IS A DIRTY OBJECT" .
+chroskos:GUILT_IS_A_DIRTY_OBJECT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_A_DIRTY_OBJECT ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "GUILT IS A DIRTY OBJECT" ;
+    skos:scopeNote "Example: OE. fūl 'foulness, impurity' 'guilt'" .
 
-figss:GUILT_IS_A_HIDDEN_OBJECT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_A_HIDDEN_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:GUILT_IS_A_HIDDEN_OBJECT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_A_HIDDEN_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GUILT IS A HIDDEN OBJECT" .
 
-figss:GUILT_IS_A_MIXED_SUBSTANCE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_A_MIXED_SUBSTANCE ;
-    skos:inScheme figss: ;
+chroskos:GUILT_IS_A_MIXED_SUBSTANCE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_A_MIXED_SUBSTANCE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GUILT IS A MIXED SUBSTANCE" .
 
-figss:GUILT_IS_LOCATION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_LOCATION ;
-    skos:inScheme figss: ;
-    skos:prefLabel "GUILT IS LOCATION" .
+chroskos:GUILT_IS_LOCATION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_LOCATION ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "GUILT IS LOCATION" ;
+    skos:scopeNote "Example: OE be-griwan 'to be sunk, steeped in guit'" .
 
-figss:GUILT_RESULTS_IN_CAPTIVITY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_RESULTS_IN_CAPTIVITY ;
-    skos:inScheme figss: ;
+chroskos:GUILT_RESULTS_IN_CAPTIVITY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_RESULTS_IN_CAPTIVITY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GUILT RESULTS IN CAPTIVITY" ;
     skos:scopeNote "Example: OE alysan (e.g., hwæt is us la selre, þonne we ealne weg ure synna beton and hi mid ælmessan georne alyson? (HomU))" .
 
-figss:GUILT_RESULTS_IN_DEBT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_RESULTS_IN_DEBT ;
-    skos:inScheme figss: ;
+chroskos:GUILT_RESULTS_IN_DEBT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_RESULTS_IN_DEBT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GUILT RESULTS IN DEBT" ;
     skos:scopeNote "Example: OE  eofot (e.g., cum autem non haberet unde redderet, iussit eum dominus uenundari ... omnia quae habebat, et reddi debitum miððy uutetlice ne hæfde hona gulde heht hine ðe hlaferd þætte were beboht ... alle ða ðe hæfde & forguulde reht ł eeooffuutt ł scyld (Ru þa scylde swa micle). (Matthew 18:25))" .
 
-figss:GUILT_USED_TO_REPAIR_DEBT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_USED_TO_REPAIR_DEBT ;
-    skos:inScheme figss: ;
+chroskos:GUILT_USED_TO_REPAIR_DEBT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_USED_TO_REPAIR_DEBT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GUILT USED TO REPAIR DEBT" ;
     skos:scopeNote "Example: OE gylt (e.g., \"Ða clypode hys hlaford hyne & cwæð to him, Eala þu lyþra þeowa, eallne þinne gylt ic ðe forgeaf forþam þe ðu me bæde\" Mt(WSCp)); OE scyld: \"Hē þā sċyld forlēt wiþ hine\" (Wikt)" .
 
-figss:GUILT_USED_TO_REPAIR_WRONGDOING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_USED_TO_REPAIR_WRONGDOING ;
-    skos:inScheme figss: ;
+chroskos:GUILT_USED_TO_REPAIR_WRONGDOING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_USED_TO_REPAIR_WRONGDOING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "GUILT USED TO REPAIR WRONGDOING" ;
     skos:scopeNote "Example: OE blod (e.g., \"uniuersus populus dixit sanguis eius super nos et super filios nostros all ðæt folc cuoeð blod his ofer usic & ofer suno iuerre\")" .
 
-figss:HAPPINESS_ASSOCIATED_WITH_PROSPERITY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_PROSPERITY ;
-    skos:inScheme figss: ;
+chroskos:HALLUCINATION_IS_LIKE_GHOST skos:broader chroskos:SYMPTOM_IS_LIKE_EXTERNAL_OBJECT .
+
+chroskos:HAPPINESS_ASSOCIATED_WITH_PROSPERITY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_PROSPERITY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "HAPPINESS ASSOCIATED WITH PROSPERITY" .
 
-figss:HAPPINESS_IS_BLOWING_WIND a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_A_BLOWING_WIND ;
-    skos:inScheme figss: ;
+chroskos:HAPPINESS_IS_BLOWING_WIND a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_A_BLOWING_WIND ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "HAPPINESS IS BLOWING WIND" .
 
-figss:HATRED_IS_WOUNDPAIN a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
-    skos:prefLabel "HATRED IS WOUND/PAIN" .
+chroskos:HATRED_IS_WOUNDPAIN a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "HATRED IS WOUND/PAIN" ;
+    skos:scopeNote "Example: OE laþ adj 'hateful' and laþ 'injury, pain'" .
 
-figss:HOPE_ASSOCIATED_WITH_LACK_OF_MOVEMENT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENT ;
-    skos:inScheme figss: ;
+chroskos:HOPE_ASSOCIATED_WITH_LACK_OF_MOVEMENT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "HOPE ASSOCIATED WITH LACK OF MOVEMENT" .
 
-figss:HOPE_IS_MOTION_UPWARDS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_MOTION_UPWARDS ;
-    skos:inScheme figss: ;
+chroskos:HOPE_IS_MOTION_UPWARDS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_MOTION_UPWARDS ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "HOPE IS MOTION UPWARDS" .
 
-figss:JEALOUSY_IS_ENERGYSTRENGTH a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_ENERGYSTRENGTH ;
-    skos:inScheme figss: ;
+chroskos:JEALOUSY_IS_ENERGYSTRENGTH a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_ENERGYSTRENGTH ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "JEALOUSY IS ENERGY/STRENGTH" .
 
-figss:JEALOUSY_IS_NARROWNESSANXIETY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_NARROWNESSANXIETY ;
-    skos:inScheme figss: ;
+chroskos:JEALOUSY_IS_NARROWNESSANXIETY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_NARROWNESSANXIETY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "JEALOUSY IS NARROWNESS/ANXIETY" .
 
-figss:JOY_ASSOCIATED_WITH_USAGE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_USAGE ;
-    skos:inScheme figss: ;
+chroskos:JOY_ASSOCIATED_WITH_USAGE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_USAGE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "JOY ASSOCIATED WITH USAGE" ;
     skos:scopeNote "Example: OE brucan 'to use' can be use a physical object, as well as joy" .
 
-figss:JOY_IS_QUICK_MOTION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_QUICK_MOTION ;
-    skos:inScheme figss: ;
+chroskos:JOY_IS_QUICK_MOTION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_QUICK_MOTION ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "JOY IS QUICK MOTION" .
 
-figss:JOY_IS_SUBSTANCE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SUBSTANCE ;
-    skos:inScheme figss: ;
+chroskos:JOY_IS_SUBSTANCE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SUBSTANCE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "JOY IS SUBSTANCE" ;
-    skos:scopeNote "Example: OE a-brǣdan and ge·brǣdan can mean to spread or figsspand physically as well as spreading joy" .
+    skos:scopeNote "Example: OE a-brǣdan and ge·brǣdan can mean to spread or expand physically as well as spreading joy",
+        "Example: OE a-brǣdan and ge·brǣdan can mean to spread or figsspand physically as well as spreading joy" .
 
-figss:JOY_IS_SUBSTANCEWIND a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SUBSTANCE ;
-    skos:inScheme figss: ;
+chroskos:JOY_IS_SUBSTANCEWIND a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SUBSTANCE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "JOY IS SUBSTANCE/WIND" .
 
-figss:KNEECAP_IS_LIKE_SMALL_BOWL a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:KNEECAP_IS_LIKE_SMALL_BOWL a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "KNEECAP IS LIKE SMALL BOWL" ;
     skos:scopeNote "Example: Latin patella" .
 
-figss:LAUGHTER_IS_MOTION_UP a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_MOTION_UP ;
-    skos:inScheme figss: ;
+chroskos:LAUGHTER_IS_MOTION_UP a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_MOTION_UP ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "LAUGHTER IS MOTION UP" .
 
-figss:LAUGHTER_IS_STIRRING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_STIRRING ;
-    skos:inScheme figss: ;
+chroskos:LAUGHTER_IS_STIRRING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_STIRRING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "LAUGHTER IS STIRRING" .
 
-figss:LONGING_IS_DISTANCE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_DISTANCE ;
-    skos:inScheme figss: ;
+chroskos:LONGING_IS_DISTANCE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_DISTANCE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "LONGING IS DISTANCE" .
 
-figss:MELANCHOLY_ASSOCIATED_WITH_LACK_OF_MOTION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION ;
-    skos:inScheme figss: ;
+chroskos:MELANCHOLY_ASSOCIATED_WITH_LACK_OF_MOTION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "MELANCHOLY ASSOCIATED WITH LACK OF MOTION" .
 
-figss:MEMBRANE_IS_LIKE_TUNIC a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:MEMBRANE_IS_LIKE_TUNIC a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "MEMBRANE IS LIKE TUNIC" ;
     skos:scopeNote "Example: Latin tunicula" .
 
-figss:MENSTRUAL_CYCLE_IS_MONTHLY_EVENT a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
+chroskos:MENSTRUAL_CYCLE_IS_MONTHLY_EVENT a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "MENSTRUAL CYCLE IS MONTHLY EVENT" ;
     skos:scopeNote "menstrua" .
 
-figss:MOLAR_TOOTH_IS_LIKE_MILLSTONE a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:MOLAR_TOOTH_IS_LIKE_MILLSTONE a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "MOLAR TOOTH IS LIKE MILLSTONE" ;
     skos:scopeNote "Example: Latin mola" .
 
-figss:PENIS_IS_LIKE_STALK a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:PENIS_IS_LIKE_STALK a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "PENIS IS LIKE STALK" ;
     skos:scopeNote "Example: Latin colis/caulis" .
 
-figss:PLEASURE_ASSOCIATED_WITH_COMFORT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_COMFORT ;
-    skos:inScheme figss: ;
+chroskos:PLEASURE_ASSOCIATED_WITH_COMFORT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_COMFORT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "PLEASURE ASSOCIATED WITH COMFORT" .
 
-figss:PLEASURE_ASSOCIATED_WITH_LIKING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LIKING ;
-    skos:inScheme figss: ;
+chroskos:PLEASURE_ASSOCIATED_WITH_LIKING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LIKING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "PLEASURE ASSOCIATED WITH LIKING" .
 
-figss:PLEASURE_IS_A_LIQUID_SUBSTANCE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_A_LIQUID_SUBSTANCE ;
-    skos:inScheme figss: ;
+chroskos:PLEASURE_IS_A_LIQUID_SUBSTANCE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_A_LIQUID_SUBSTANCE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "PLEASURE IS A LIQUID SUBSTANCE" ;
     skos:scopeNote "Example: OE burna 'stream', burna wyllan ‘torrent of pleasure’" .
 
-figss:PRIDE_IS_BELLYSWELLING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_A_BELLYSWELLING ;
-    skos:inScheme figss: ;
+chroskos:PRIDE_IS_BELLYSWELLING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_A_BELLYSWELLING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "PRIDE IS BELLY/SWELLING" .
 
-figss:PRIDE_IS_MOTION_UPWARDS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_MOTION_UPWARDS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "PRIDE IS MOTION UPWARDS" .
+chroskos:PRIDE_IS_MOTION_UPWARDS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_MOTION_UPWARDS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "PRIDE IS MOTION UPWARDS" ;
+    skos:scopeNote "Example: OE upahefednes 'pride, arrogance' where ahefednes 'rising'" .
 
-figss:PRIDE_IS_SWELLING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SWELLING ;
-    skos:inScheme figss: ;
-    skos:prefLabel "PRIDE IS SWELLING" .
+chroskos:PRIDE_IS_SWELLING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SWELLING ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "PRIDE IS SWELLING" ;
+    skos:scopeNote "Example: OE gebyrman 'to ferment, to swell', 'to be proud' " .
 
-figss:PRIDE_IS_TALLBIG a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_TALLBIG ;
-    skos:inScheme figss: ;
-    skos:prefLabel "PRIDE IS TALL/BIG" .
+chroskos:PRIDE_IS_TALLBIG a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_TALLBIG ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "PRIDE IS TALL/BIG" ;
+    skos:scopeNote "Example: OE ranc 'full grown', 'proud'" .
 
-figss:RAGE_IS_SWELLING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SWELLING ;
-    skos:inScheme figss: ;
+chroskos:RAGE_IS_SWELLING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SWELLING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "RAGE IS SWELLING" .
 
-figss:RELIEF_ASSOCIATED_WITH_IMPROVEMENT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_IMPROVEMENT ;
-    skos:inScheme figss: ;
+chroskos:RELIEF_ASSOCIATED_WITH_IMPROVEMENT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_IMPROVEMENT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "RELIEF ASSOCIATED WITH IMPROVEMENT" .
 
-figss:RELIEF_ASSOCIATED_WITH_MERCY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_MERCY ;
-    skos:inScheme figss: ;
+chroskos:RELIEF_ASSOCIATED_WITH_MERCY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_MERCY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "RELIEF ASSOCIATED WITH MERCY" .
 
-figss:RELIEF_IS_NOT_HEAVY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_NOT_HEAVY ;
-    skos:inScheme figss: ;
+chroskos:RELIEF_IS_NOT_HEAVY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_NOT_HEAVY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "RELIEF IS NOT HEAVY" .
 
-figss:RELIEF_IS_SLOW_MOTION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SLOW_MOTION ;
-    skos:inScheme figss: ;
+chroskos:RELIEF_IS_SLOW_MOTION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SLOW_MOTION ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "RELIEF IS SLOW MOTION" .
 
-figss:REPENTANCE_ASSOCIATED_WITH_MOTION_BACKWARDS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_MOTION_BACKWARDS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "REPENTANCE ASSOCIATED WITH MOTION BACKWARDS" .
+chroskos:REPENTANCE_ASSOCIATED_WITH_MOTION_BACKWARDS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_MOTION_BACKWARDS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "REPENTANCE ASSOCIATED WITH MOTION BACKWARDS" ;
+    skos:scopeNote "Example: OE gecyrran 'to turn', 'to convert'" .
 
-figss:REPENTANCE_IS_LOCATION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_LOCATION ;
-    skos:inScheme figss: ;
+chroskos:REPENTANCE_IS_LOCATION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_LOCATION ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "REPENTANCE IS LOCATION" .
 
-figss:REPENTANCE_USED_TO_REPAIR_WRONGDOING a skos:Concept ;
-    skos:broader figss:EMOTION_USED_TO_REPAIR_WRONGDOING ;
-    skos:inScheme figss: ;
-    skos:prefLabel "REPENTANCE USED TO REPAIR WRONGDOING" .
+chroskos:REPENTANCE_USED_TO_REPAIR_WRONGDOING a skos:Concept ;
+    skos:broader chroskos:EMOTION_USED_TO_REPAIR_WRONGDOING ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "REPENTANCE USED TO REPAIR WRONGDOING" ;
+    skos:scopeNote "Example: OE gebetan 'to fix, repair' (e.g., \"Þā fōr Ēadweard cyning mid Westseaxna fierde tō Colneċeastre and ġebētte þā burg and ġeednīewode þǣr hēo ǣr tōbrocen wæs.\") and 'to atone, compensate for' " .
 
-figss:REVERENCE_IS_RESPECT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_RESPECT ;
-    skos:inScheme figss: ;
+chroskos:REVERENCE_IS_RESPECT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_RESPECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "REVERENCE IS RESPECT" .
 
-figss:SADNESS_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
-    skos:inScheme figss: ;
-    skos:prefLabel "SADNESS ASSOCIATED WITH LACK OF ENERGY" .
+chroskos:SADNESS_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "SADNESS ASSOCIATED WITH LACK OF ENERGY" ;
+    skos:scopeNote "Example: OE werigferhð 'weary-hearted', wērig 'weary', ferhð 'spirit' " .
 
-figss:SADNESS_ASSOCIATED_WITH_LACK_OF_MOTION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION ;
-    skos:inScheme figss: ;
-    skos:prefLabel "SADNESS ASSOCIATED WITH LACK OF MOTION" .
+chroskos:SADNESS_ASSOCIATED_WITH_LACK_OF_MOTION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "SADNESS ASSOCIATED WITH LACK OF MOTION" ;
+    skos:scopeNote "Example: OE slæcmód-ness 'melancholy lack of energy' where slæc 'inactive'" .
 
-figss:SADNESS_ASSOCIATED_WITH_SADNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_SADNESS ;
-    skos:inScheme figss: ;
+chroskos:SADNESS_ASSOCIATED_WITH_SADNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_SADNESS ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SADNESS ASSOCIATED WITH SADNESS" .
 
-figss:SADNESS_ASSOCIATED_WITH_WITHOUT_GLORY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_WITHOUT_GLORY ;
-    skos:inScheme figss: ;
+chroskos:SADNESS_ASSOCIATED_WITH_WITHOUT_GLORY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_WITHOUT_GLORY ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SADNESS ASSOCIATED WITH WITHOUT GLORY" .
 
-figss:SADNESS_ASSOCIATED_WITH_WITHOUT_PROTECTION a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_WITHOUT_PROTECTION ;
-    skos:inScheme figss: ;
+chroskos:SADNESS_ASSOCIATED_WITH_WITHOUT_PROTECTION a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_WITHOUT_PROTECTION ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SADNESS ASSOCIATED WITH WITHOUT PROTECTION" .
 
-figss:SADNESS_IS_DARKNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_DARKNESS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "SADNESS IS DARKNESS" .
+chroskos:SADNESS_IS_DARKNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_DARKNESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "SADNESS IS DARKNESS" ;
+    skos:scopeNote "Example: OE drysmian 'to become dark, gloomy', 'to be made sad, to mourn'" .
 
-figss:SADNESS_IS_MOTION_UP a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_MOTION_UP ;
-    skos:inScheme figss: ;
+chroskos:SADNESS_IS_MOTION_UP a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_MOTION_UP ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SADNESS IS MOTION UP" .
 
-figss:SCROTUM_IS_LIKE_LEATHER_SACK_FOR_ARROWS a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:SCROTUM_IS_LIKE_LEATHER_SACK_FOR_ARROWS a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SCROTUM IS LIKE LEATHER SACK FOR ARROWS" ;
     skos:scopeNote "Example: Latin scrotum" .
 
-figss:SHAME_IS_RESPECT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_RESPECT ;
-    skos:inScheme figss: ;
+chroskos:SHAME_IS_RESPECT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_RESPECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SHAME IS RESPECT" .
 
-figss:SHIN_BONE_IS_LIKE_FLUTE a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:SHIN_BONE_IS_LIKE_FLUTE a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SHIN BONE IS LIKE FLUTE" ;
     skos:scopeNote "Example: Latin tibia" .
 
-figss:SKIN_DISEASE_IS_LIKE_SPIDER a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:DISEASE_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:SKIN_DISEASE_IS_LIKE_SPIDER a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:DISEASE_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:DISEASE_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SKIN DISEASE IS LIKE SPIDER" ;
     skos:scopeNote "Example: Latin aranea" .
 
-figss:SORROW_ASSOCIATED_WITH_BAD_OPINION_ON_STH a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_BAD_OPINION_ON_STH ;
-    skos:inScheme figss: ;
+chroskos:SORROW_ASSOCIATED_WITH_BAD_OPINION_ON_STH a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_BAD_OPINION_ON_STH ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SORROW ASSOCIATED WITH BAD OPINION ON STH" .
 
-figss:SORROW_ASSOCIATED_WITH_FRAUD a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_FRAUD ;
-    skos:inScheme figss: ;
+chroskos:SORROW_ASSOCIATED_WITH_FRAUD a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_FRAUD ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SORROW ASSOCIATED WITH FRAUD" .
 
-figss:SORROW_IS_SUBSTANCE_DISSOLVING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_SUBSTANCE_DISSOLVING ;
-    skos:inScheme figss: ;
+chroskos:SORROW_IS_SUBSTANCE_DISSOLVING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_SUBSTANCE_DISSOLVING ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SORROW IS SUBSTANCE DISSOLVING" .
 
-figss:SORROW_IS_WOUND a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_WOUND ;
-    skos:inScheme figss: ;
-    skos:prefLabel "SORROW IS WOUND" .
+chroskos:SORROW_IS_WOUND a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_WOUND ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "SORROW IS WOUND" ;
+    skos:scopeNote "Example: OE hearm-cwide 'Injurious, abusive speech' 'a sentence pronouncing harm or sorrow'" .
 
-figss:SYMPTOM_IS_IMPERFECTION skos:broader figss:METONYMY .
+chroskos:SYMPTOM_IS_IMPERFECTION a skos:Concept ;
+    skos:broader chroskos:METAPHOR,
+        chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "SYMPTOM IS IMPERFECTION" .
 
-figss:SYMPTOM_IS_LIKE_EXTERNAL_OBJECT skos:broader figss:METONYMY; 
-	skos:narrower figss:HALLUCINATION_IS_LIKE_GHOST.
+chroskos:SYMPTOM_IS_LIKE_EXTERNAL_OBJECT skos:broader chroskos:METONYMY ;
+    skos:narrower chroskos:HALLUCINATION_IS_LIKE_GHOST .
 
-figss:SYMPTOM_IS_LIKE_FAULT a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:inScheme figss: ;
+chroskos:SYMPTOM_IS_LIKE_FAULT a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "SYMPTOM IS LIKE FAULT" ;
     skos:scopeNote "Example: Latin vitium" .
 
-figss:TERROR_ASSOCIATED_WITH_TEMPERATURE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_ASSOCIATED_WITH_TEMPERATURE ;
-    skos:inScheme figss: ;
+chroskos:SYMPTOM_IS_OBJECT a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "SYMPTOM IS OBJECT" .
+
+chroskos:TERROR_ASSOCIATED_WITH_TEMPERATURE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_ASSOCIATED_WITH_TEMPERATURE ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "TERROR ASSOCIATED WITH TEMPERATURE" .
 
-figss:TERROR_IS_OPPONENT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_OPPONENT ;
-    skos:inScheme figss: ;
+chroskos:TERROR_IS_OPPONENT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_OPPONENT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "TERROR IS OPPONENT" .
 
-figss:TONSIL_IS_LIKE_POLE a skos:Concept ;
-    dc:creator "Paola Marongiu" ;
-    skos:broader figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT ;
-    skos:inScheme figss: ;
+chroskos:TONSIL_IS_LIKE_POLE a skos:Concept ;
+    dct:creator "Paola Marongiu" ;
+    skos:broader chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_OBJECT ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "TONSIL IS LIKE POLE" ;
     skos:scopeNote "Example: Latin tonsilla" .
 
-figss:TROUBLE_IS_NARROWNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_NARROWNESS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "TROUBLE IS NARROWNESS" .
+chroskos:TROUBLE_IS_NARROWNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_NARROWNESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "TROUBLE IS NARROWNESS" ;
+    skos:scopeNote "Example: OE ange 'narrow, confined, tight', 'vexed, troubled, anxious, sorrowful'" .
 
-figss:WORRY_IS_STIRRING a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_STIRRING ;
-    skos:inScheme figss: ;
-    skos:prefLabel "WORRY IS STIRRING" .
+chroskos:WORRY_IS_STIRRING a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_STIRRING ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "WORRY IS STIRRING" ;
+    skos:scopeNote "Example: OE ymb-styrian 'to stir about', 'to upset'" .
 
-figss:WORRY_IS_TURBIDNESS a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_TURBIDNESS ;
-    skos:inScheme figss: ;
-    skos:prefLabel "WORRY IS TURBIDNESS" .
+chroskos:WORRY_IS_TURBIDNESS a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_TURBIDNESS ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "WORRY IS TURBIDNESS" ;
+    skos:scopeNote "Example: Proto West German *drōbijan 'to make turbid, cloudy',  'to trouble, to disturb' (Source: Wiktionary)" .
 
-figss:ZEAL_IS_ENERGYSTRENGTH a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_ENERGYSTRENGTH ;
-    skos:inScheme figss: ;
+chroskos:ZEAL_IS_ENERGYSTRENGTH a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_ENERGYSTRENGTH ;
+    skos:inScheme chroskos: ;
     skos:prefLabel "ZEAL IS ENERGY/STRENGTH" ;
     skos:scopeNote "Example: OE elnung 'zeal' from root ellen 'strength'" .
 
-figss:CAUSATIVE_METONYMY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:EMOTION_CAUSES_CAPTIVITY ;
+chroskos:CAUSATIVE_METONYMY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:EMOTION_CAUSES_CAPTIVITY ;
     skos:prefLabel "CAUSATIVE METONYMY" .
 
-figss:DISEASE_IS_LIKE_EXTERNAL_OBJECT skos:broader figss:METONYMY .
+chroskos:DISEASE_IS_OBJECT a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "DISEASE IS OBJECT" .
 
-figss:EMOTION_ASSOCIATED_WITH_AFFLICTION a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ANGER_ASSOCIATED_WITH_AFFLICTION ;
+chroskos:EMOTION_ASSOCIATED_WITH_AFFLICTION a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ANGER_ASSOCIATED_WITH_AFFLICTION ;
     skos:prefLabel "EMOTION ASSOCIATED WITH AFFLICTION" .
 
-figss:EMOTION_ASSOCIATED_WITH_ANGER a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_ANGER ;
+chroskos:EMOTION_ASSOCIATED_WITH_ANGER a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_ANGER ;
     skos:prefLabel "EMOTION ASSOCIATED WITH ANGER" .
 
-
-figss:EMOTION_ASSOCIATED_WITH_CHANGE_COLOUR a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_CHANGE_COLOUR ;
+chroskos:EMOTION_ASSOCIATED_WITH_CHANGE_COLOUR a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_CHANGE_COLOUR ;
     skos:prefLabel "EMOTION ASSOCIATED WITH CHANGE (COLOUR)" .
 
-figss:EMOTION_ASSOCIATED_WITH_COMFORT a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:PLEASURE_ASSOCIATED_WITH_COMFORT ;
+chroskos:EMOTION_ASSOCIATED_WITH_COMFORT a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:PLEASURE_ASSOCIATED_WITH_COMFORT ;
     skos:prefLabel "EMOTION ASSOCIATED WITH COMFORT" .
 
-figss:EMOTION_ASSOCIATED_WITH_EASYNESS a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:CONTENT_ASSOCIATED_WITH_EASYNESS ;
+chroskos:EMOTION_ASSOCIATED_WITH_EASYNESS a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:CONTENT_ASSOCIATED_WITH_EASYNESS ;
     skos:prefLabel "EMOTION ASSOCIATED WITH EASYNESS" .
 
-figss:EMOTION_ASSOCIATED_WITH_EMPATHY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:COMPASSION_ASSOCIATED_WITH_EMPATHY ;
+chroskos:EMOTION_ASSOCIATED_WITH_EMPATHY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:COMPASSION_ASSOCIATED_WITH_EMPATHY ;
     skos:prefLabel "EMOTION ASSOCIATED WITH EMPATHY" .
 
-figss:EMOTION_ASSOCIATED_WITH_EVIL a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AFFLICTION_ASSOCIATED_WITH_EVIL ;
+chroskos:EMOTION_ASSOCIATED_WITH_EVIL a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AFFLICTION_ASSOCIATED_WITH_EVIL ;
     skos:prefLabel "EMOTION ASSOCIATED WITH EVIL" .
 
-figss:EMOTION_ASSOCIATED_WITH_FRAUD a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:SORROW_ASSOCIATED_WITH_FRAUD ;
+chroskos:EMOTION_ASSOCIATED_WITH_FRAUD a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:SORROW_ASSOCIATED_WITH_FRAUD ;
     skos:prefLabel "EMOTION ASSOCIATED WITH FRAUD" .
 
-figss:EMOTION_ASSOCIATED_WITH_HONOUR a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:COMPASSION_ASSOCIATED_WITH_HONOUR ;
+chroskos:EMOTION_ASSOCIATED_WITH_HONOUR a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:COMPASSION_ASSOCIATED_WITH_HONOUR ;
     skos:prefLabel "EMOTION ASSOCIATED WITH HONOUR" .
 
-figss:EMOTION_ASSOCIATED_WITH_HOPELESSNESS a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:DESPAIR_ASSOCIATED_WITH_HOPELESSNESS ;
+chroskos:EMOTION_ASSOCIATED_WITH_HOPELESSNESS a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:DESPAIR_ASSOCIATED_WITH_HOPELESSNESS ;
     skos:prefLabel "EMOTION ASSOCIATED WITH HOPELESSNESS" .
 
-figss:EMOTION_ASSOCIATED_WITH_IMPROVEMENT a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:RELIEF_ASSOCIATED_WITH_IMPROVEMENT ;
+chroskos:EMOTION_ASSOCIATED_WITH_IMPROVEMENT a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:RELIEF_ASSOCIATED_WITH_IMPROVEMENT ;
     skos:prefLabel "EMOTION ASSOCIATED WITH IMPROVEMENT" .
 
-figss:EMOTION_ASSOCIATED_WITH_IN_THE_MIND a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ANXIETY_ASSOCIATED_WITH_IN_THE_MIND ;
+chroskos:EMOTION_ASSOCIATED_WITH_IN_THE_MIND a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ANXIETY_ASSOCIATED_WITH_IN_THE_MIND ;
     skos:prefLabel "EMOTION ASSOCIATED WITH IN THE MIND" .
 
-figss:EMOTION_ASSOCIATED_WITH_JUMP a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ENJOYMENT_ASSOCIATED_WITH_JUMP ;
+chroskos:EMOTION_ASSOCIATED_WITH_JUMP a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ENJOYMENT_ASSOCIATED_WITH_JUMP ;
     skos:prefLabel "EMOTION ASSOCIATED WITH JUMP" .
 
-figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY ;
+chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY ;
     skos:prefLabel "EMOTION ASSOCIATED WITH LACK OF MOVEMENT/CAPTIVITY" .
 
-figss:EMOTION_ASSOCIATED_WITH_LIKING a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:PLEASURE_ASSOCIATED_WITH_LIKING ;
+chroskos:EMOTION_ASSOCIATED_WITH_LIKING a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:PLEASURE_ASSOCIATED_WITH_LIKING ;
     skos:prefLabel "EMOTION ASSOCIATED WITH LIKING" .
 
-figss:EMOTION_ASSOCIATED_WITH_MALICE a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ENVY_ASSOCIATED_WITH_MALICE ;
+chroskos:EMOTION_ASSOCIATED_WITH_MALICE a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ENVY_ASSOCIATED_WITH_MALICE ;
     skos:prefLabel "EMOTION ASSOCIATED WITH MALICE" .
 
-figss:EMOTION_ASSOCIATED_WITH_MENTAL_DISTRESS a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GRIEF_ASSOCIATED_WITH_MENTAL_DISTRESS ;
+chroskos:EMOTION_ASSOCIATED_WITH_MENTAL_DISTRESS a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GRIEF_ASSOCIATED_WITH_MENTAL_DISTRESS ;
     skos:prefLabel "EMOTION ASSOCIATED WITH MENTAL DISTRESS" .
 
-figss:EMOTION_ASSOCIATED_WITH_MERCY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:RELIEF_ASSOCIATED_WITH_MERCY ;
+chroskos:EMOTION_ASSOCIATED_WITH_MERCY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:RELIEF_ASSOCIATED_WITH_MERCY ;
     skos:prefLabel "EMOTION ASSOCIATED WITH MERCY" .
 
-figss:EMOTION_ASSOCIATED_WITH_MOTION_DOWNWARDS a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_MOTION_DOWNWARDS ;
+chroskos:EMOTION_ASSOCIATED_WITH_MOTION_DOWNWARDS a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_MOTION_DOWNWARDS ;
     skos:prefLabel "EMOTION ASSOCIATED WITH MOTION DOWNWARDS" .
 
-figss:EMOTION_ASSOCIATED_WITH_MOTION_TO_AND_FRO a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ASTONISHMENT_ASSOCIATED_WITH_MOTION_TO_AND_FRO ;
+chroskos:EMOTION_ASSOCIATED_WITH_MOTION_TO_AND_FRO a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ASTONISHMENT_ASSOCIATED_WITH_MOTION_TO_AND_FRO ;
     skos:prefLabel "EMOTION ASSOCIATED WITH MOTION TO AND FRO" .
 
-figss:EMOTION_ASSOCIATED_WITH_PALLOR a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ENVY_ASSOCIATED_WITH_PALLOR ;
+chroskos:EMOTION_ASSOCIATED_WITH_PALLOR a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ENVY_ASSOCIATED_WITH_PALLOR ;
     skos:prefLabel "EMOTION ASSOCIATED WITH PALLOR" .
 
-figss:EMOTION_ASSOCIATED_WITH_PASSSION a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ELATION_ASSOCIATED_WITH_PASSSION ;
+chroskos:EMOTION_ASSOCIATED_WITH_PASSSION a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ELATION_ASSOCIATED_WITH_PASSSION ;
     skos:prefLabel "EMOTION ASSOCIATED WITH PASSSION" .
 
-figss:EMOTION_ASSOCIATED_WITH_PROSPERITY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:HAPPINESS_ASSOCIATED_WITH_PROSPERITY ;
+chroskos:EMOTION_ASSOCIATED_WITH_PROSPERITY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:HAPPINESS_ASSOCIATED_WITH_PROSPERITY ;
     skos:prefLabel "EMOTION ASSOCIATED WITH PROSPERITY" .
 
-figss:EMOTION_ASSOCIATED_WITH_REVERENCE a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AWE_ASSOCIATED_WITH_REVERENCE ;
+chroskos:EMOTION_ASSOCIATED_WITH_REVERENCE a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AWE_ASSOCIATED_WITH_REVERENCE ;
     skos:prefLabel "EMOTION ASSOCIATED WITH REVERENCE" .
 
-figss:EMOTION_ASSOCIATED_WITH_RIGIDITY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_RIGIDITY ;
+chroskos:EMOTION_ASSOCIATED_WITH_RIGIDITY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_RIGIDITY ;
     skos:prefLabel "EMOTION ASSOCIATED WITH RIGIDITY" .
 
-figss:EMOTION_ASSOCIATED_WITH_SADNESS a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:SADNESS_ASSOCIATED_WITH_SADNESS ;
+chroskos:EMOTION_ASSOCIATED_WITH_SADNESS a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:SADNESS_ASSOCIATED_WITH_SADNESS ;
     skos:prefLabel "EMOTION ASSOCIATED WITH SADNESS" .
 
-figss:EMOTION_ASSOCIATED_WITH_SHOUT a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_SHOUT ;
+chroskos:EMOTION_ASSOCIATED_WITH_SHOUT a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_SHOUT ;
     skos:prefLabel "EMOTION ASSOCIATED WITH SHOUT" .
 
-figss:EMOTION_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AWE_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS ;
+chroskos:EMOTION_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AWE_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS ;
     skos:prefLabel "EMOTION ASSOCIATED WITH SLOW MOTION/SLUGGISHNESS/DARKNESS" .
 
-figss:EMOTION_ASSOCIATED_WITH_TIMIDITY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_TIMIDITY ;
+chroskos:EMOTION_ASSOCIATED_WITH_TIMIDITY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_TIMIDITY ;
     skos:prefLabel "EMOTION ASSOCIATED WITH TIMIDITY" .
 
-figss:EMOTION_ASSOCIATED_WITH_TORPOR a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_TORPOR ;
+chroskos:EMOTION_ASSOCIATED_WITH_TORPOR a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_TORPOR ;
     skos:prefLabel "EMOTION ASSOCIATED WITH TORPOR" .
 
-figss:EMOTION_ASSOCIATED_WITH_TO_SHRINK a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_TO_SHRINK ;
+chroskos:EMOTION_ASSOCIATED_WITH_TO_SHRINK a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_TO_SHRINK ;
     skos:prefLabel "EMOTION ASSOCIATED WITH TO SHRINK" .
 
-figss:EMOTION_ASSOCIATED_WITH_TREMBLING a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_TREMBLING ;
+chroskos:EMOTION_ASSOCIATED_WITH_TREMBLING a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_TREMBLING ;
     skos:prefLabel "EMOTION ASSOCIATED WITH TREMBLING" .
 
-figss:EMOTION_ASSOCIATED_WITH_UNCERTAINTY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_UNCERTAINTY ;
+chroskos:EMOTION_ASSOCIATED_WITH_UNCERTAINTY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_UNCERTAINTY ;
     skos:prefLabel "EMOTION ASSOCIATED WITH UNCERTAINTY" .
 
-figss:EMOTION_ASSOCIATED_WITH_USAGE a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:JOY_ASSOCIATED_WITH_USAGE ;
+chroskos:EMOTION_ASSOCIATED_WITH_USAGE a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:JOY_ASSOCIATED_WITH_USAGE ;
     skos:prefLabel "EMOTION ASSOCIATED WITH USAGE" .
 
-figss:EMOTION_ASSOCIATED_WITH_WITHOUT_GLORY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:SADNESS_ASSOCIATED_WITH_WITHOUT_GLORY ;
+chroskos:EMOTION_ASSOCIATED_WITH_WITHOUT_GLORY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:SADNESS_ASSOCIATED_WITH_WITHOUT_GLORY ;
     skos:prefLabel "EMOTION ASSOCIATED WITH WITHOUT GLORY" .
 
-figss:EMOTION_ASSOCIATED_WITH_WITHOUT_HOPE a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:DESPAIR_ASSOCIATED_WITH_WITHOUT_HOPE ;
+chroskos:EMOTION_ASSOCIATED_WITH_WITHOUT_HOPE a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:DESPAIR_ASSOCIATED_WITH_WITHOUT_HOPE ;
     skos:prefLabel "EMOTION ASSOCIATED WITH WITHOUT HOPE" .
 
-figss:EMOTION_ASSOCIATED_WITH_WITHOUT_PROTECTION a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:SADNESS_ASSOCIATED_WITH_WITHOUT_PROTECTION ;
+chroskos:EMOTION_ASSOCIATED_WITH_WITHOUT_PROTECTION a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:SADNESS_ASSOCIATED_WITH_WITHOUT_PROTECTION ;
     skos:prefLabel "EMOTION ASSOCIATED WITH WITHOUT PROTECTION" .
 
-figss:EMOTION_CAUSES_CAPTIVITY a skos:Concept ;
-    skos:broader figss:CAUSATIVE_METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_CAUSES_CAPTIVITY ;
+chroskos:EMOTION_CAUSES_CAPTIVITY a skos:Concept ;
+    skos:broader chroskos:CAUSATIVE_METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_CAUSES_CAPTIVITY ;
     skos:prefLabel "EMOTION CAUSES CAPTIVITY" .
 
-figss:EMOTION_IS_A_BELLYSWELLING a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:PRIDE_IS_BELLYSWELLING ;
+chroskos:EMOTION_IS_A_BELLYSWELLING a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:PRIDE_IS_BELLYSWELLING ;
     skos:prefLabel "EMOTION IS A BELLY/SWELLING" .
 
-figss:EMOTION_IS_A_BLOWING_WIND a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:HAPPINESS_IS_BLOWING_WIND ;
+chroskos:EMOTION_IS_A_BLOWING_WIND a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:HAPPINESS_IS_BLOWING_WIND ;
     skos:prefLabel "EMOTION IS A BLOWING WIND" .
 
-figss:EMOTION_IS_A_DIRTY_OBJECT a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_IS_A_DIRTY_OBJECT ;
+chroskos:EMOTION_IS_A_DIRTY_OBJECT a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_IS_A_DIRTY_OBJECT ;
     skos:prefLabel "EMOTION IS A DIRTY OBJECT" .
 
-figss:EMOTION_IS_A_HIDDEN_OBJECT a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_IS_A_HIDDEN_OBJECT ;
+chroskos:EMOTION_IS_A_HIDDEN_OBJECT a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_IS_A_HIDDEN_OBJECT ;
     skos:prefLabel "EMOTION IS A HIDDEN OBJECT" .
 
-figss:EMOTION_IS_A_LIQUID_SUBSTANCE a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:PLEASURE_IS_A_LIQUID_SUBSTANCE ;
+chroskos:EMOTION_IS_A_LIQUID_SUBSTANCE a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:PLEASURE_IS_A_LIQUID_SUBSTANCE ;
     skos:prefLabel "EMOTION IS A LIQUID SUBSTANCE" .
 
-figss:EMOTION_IS_A_MIXED_SUBSTANCE a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_IS_A_MIXED_SUBSTANCE ;
+chroskos:EMOTION_IS_A_MIXED_SUBSTANCE a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_IS_A_MIXED_SUBSTANCE ;
     skos:prefLabel "EMOTION IS A MIXED SUBSTANCE" .
 
-figss:EMOTION_IS_CHANGE_IN_SIZE a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_IS_CHANGE_SIZE ;
+chroskos:EMOTION_IS_CHANGE_IN_SIZE a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_IS_CHANGE_SIZE ;
     skos:prefLabel "EMOTION IS CHANGE IN SIZE" .
 
-figss:EMOTION_IS_DARKNESS a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:SADNESS_IS_DARKNESS ;
+chroskos:EMOTION_IS_DARKNESS a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:SADNESS_IS_DARKNESS ;
     skos:prefLabel "EMOTION IS DARKNESS" .
 
-figss:EMOTION_IS_DISTANCE a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:LONGING_IS_DISTANCE ;
+chroskos:EMOTION_IS_DISTANCE a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:LONGING_IS_DISTANCE ;
     skos:prefLabel "EMOTION IS DISTANCE" .
 
-figss:EMOTION_IS_HEAVINESS a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GRIEF_IS_HEAVINESS ;
+chroskos:EMOTION_IS_HEAVINESS a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GRIEF_IS_HEAVINESS ;
     skos:prefLabel "EMOTION IS HEAVINESS" .
 
-figss:EMOTION_IS_INTOXICATION a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ELATION_IS_INTOXICATION ;
+chroskos:EMOTION_IS_INTOXICATION a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ELATION_IS_INTOXICATION ;
     skos:prefLabel "EMOTION IS INTOXICATION" .
 
-figss:EMOTION_IS_MITIGATION a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ANGER_IS_MITIGATION ;
+chroskos:EMOTION_IS_MITIGATION a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ANGER_IS_MITIGATION ;
     skos:prefLabel "EMOTION IS MITIGATION" .
 
-figss:EMOTION_IS_NOT_HEAVY a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:RELIEF_IS_NOT_HEAVY ;
+chroskos:EMOTION_IS_NOT_HEAVY a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:RELIEF_IS_NOT_HEAVY ;
     skos:prefLabel "EMOTION IS NOT HEAVY" .
 
-figss:EMOTION_IS_OVER-HEARING a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:DISOBEDIENCE_IS_OVER-HEARING ;
+chroskos:EMOTION_IS_OVER-HEARING a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:DISOBEDIENCE_IS_OVER-HEARING ;
     skos:prefLabel "EMOTION IS OVER-HEARING" .
 
-figss:EMOTION_IS_OVERLOOKING a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:CONTEMPT_IS_OVERLOOKING ;
+chroskos:EMOTION_IS_OVERLOOKING a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:CONTEMPT_IS_OVERLOOKING ;
     skos:prefLabel "EMOTION IS OVERLOOKING" .
 
-figss:EMOTION_IS_PAIN a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GRIEF_IS_PAIN ;
+chroskos:EMOTION_IS_PAIN a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GRIEF_IS_PAIN ;
     skos:prefLabel "EMOTION IS PAIN" .
 
-figss:EMOTION_IS_PRICKING a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ARDOUR_IS_PRICKING ;
+chroskos:EMOTION_IS_PRICKING a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ARDOUR_IS_PRICKING ;
     skos:prefLabel "EMOTION IS PRICKING" .
 
-figss:EMOTION_IS_QUICK_MOTION a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:JOY_IS_QUICK_MOTION ;
+chroskos:EMOTION_IS_QUICK_MOTION a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:JOY_IS_QUICK_MOTION ;
     skos:prefLabel "EMOTION IS QUICK MOTION" .
 
-figss:EMOTION_IS_SLOW_MOTION a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:RELIEF_IS_SLOW_MOTION ;
+chroskos:EMOTION_IS_SLOW_MOTION a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:RELIEF_IS_SLOW_MOTION ;
     skos:prefLabel "EMOTION IS SLOW MOTION" .
 
-figss:EMOTION_IS_STIFF a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:DISGUST_IS_STIFF ;
+chroskos:EMOTION_IS_STIFF a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:DISGUST_IS_STIFF ;
     skos:prefLabel "EMOTION IS STIFF" .
 
-figss:EMOTION_IS_SUBSTANCE_DISSOLVING a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:SORROW_IS_SUBSTANCE_DISSOLVING ;
+chroskos:EMOTION_IS_SUBSTANCE_DISSOLVING a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:SORROW_IS_SUBSTANCE_DISSOLVING ;
     skos:prefLabel "EMOTION IS SUBSTANCE DISSOLVING" .
 
-figss:EMOTION_IS_TALLBIG a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:PRIDE_IS_TALLBIG ;
+chroskos:EMOTION_IS_TALLBIG a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:PRIDE_IS_TALLBIG ;
     skos:prefLabel "EMOTION IS TALL/BIG" .
 
-figss:EMOTION_RESULTS_IN_CAPTIVITY a skos:Concept ;
-    skos:broader figss:RESULTATIVE_METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_RESULTS_IN_CAPTIVITY ;
+chroskos:EMOTION_RESULTS_IN_CAPTIVITY a skos:Concept ;
+    skos:broader chroskos:RESULTATIVE_METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_RESULTS_IN_CAPTIVITY ;
     skos:prefLabel "EMOTION RESULTS IN CAPTIVITY" .
 
-figss:EMOTION_RESULTS_IN_DEBT a skos:Concept ;
-    skos:broader figss:RESULTATIVE_METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_RESULTS_IN_DEBT ;
+chroskos:EMOTION_RESULTS_IN_DEBT a skos:Concept ;
+    skos:broader chroskos:RESULTATIVE_METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_RESULTS_IN_DEBT ;
     skos:prefLabel "EMOTION RESULTS IN DEBT" .
 
-figss:EMOTION_USED_TO_REPAIR_DEBT a skos:Concept ;
-    skos:broader figss:INSTRUMENTAL_METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_USED_TO_REPAIR_DEBT ;
+chroskos:EMOTION_USED_TO_REPAIR_DEBT a skos:Concept ;
+    skos:broader chroskos:INSTRUMENTAL_METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_USED_TO_REPAIR_DEBT ;
     skos:prefLabel "EMOTION USED TO REPAIR DEBT" .
 
-figss:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT skos:broader figss:METONYMY .
+chroskos:DISEASE_IS_LIKE_EXTERNAL_OBJECT a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:CANCER_IS_LIKE_CRAB,
+        chroskos:SKIN_DISEASE_IS_LIKE_SPIDER ;
+    skos:prefLabel "DISEASE IS LIKE EXTERNAL OBJECT" .
 
-figss:EMOTION_ASSOCIATED_WITH_BAD_OPINION_ON_STH a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:DESPAIR_ASSOCIATED_WITH_BAD_OPINION_ON_STH,
-        figss:SORROW_ASSOCIATED_WITH_BAD_OPINION_ON_STH ;
+chroskos:EMOTION_ASSOCIATED_WITH_BAD_OPINION_ON_STH a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:DESPAIR_ASSOCIATED_WITH_BAD_OPINION_ON_STH,
+        chroskos:SORROW_ASSOCIATED_WITH_BAD_OPINION_ON_STH ;
     skos:prefLabel "EMOTION ASSOCIATED WITH BAD OPINION ON STH" .
 
-figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENT a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_LACK_OF_MOVEMENT,
-        figss:HOPE_ASSOCIATED_WITH_LACK_OF_MOVEMENT ;
+chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENT a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_LACK_OF_MOVEMENT,
+        chroskos:HOPE_ASSOCIATED_WITH_LACK_OF_MOVEMENT ;
     skos:prefLabel "EMOTION ASSOCIATED WITH LACK OF MOVEMENT" .
 
-figss:EMOTION_ASSOCIATED_WITH_MOTION_BACK a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AWE_ASSOCIATED_WITH_MOTION_BACK,
-        figss:FEAR_ASSOCIATED_WITH_MOTION_BACK ;
+chroskos:EMOTION_ASSOCIATED_WITH_MOTION_BACK a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AWE_ASSOCIATED_WITH_MOTION_BACK,
+        chroskos:FEAR_ASSOCIATED_WITH_MOTION_BACK ;
     skos:prefLabel "EMOTION ASSOCIATED WITH MOTION BACK" .
 
-figss:EMOTION_ASSOCIATED_WITH_MOTION_BACKWARDS a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_MOTION_BACKWARDS,
-        figss:REPENTANCE_ASSOCIATED_WITH_MOTION_BACKWARDS ;
+chroskos:EMOTION_ASSOCIATED_WITH_MOTION_BACKWARDS a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_MOTION_BACKWARDS,
+        chroskos:REPENTANCE_ASSOCIATED_WITH_MOTION_BACKWARDS ;
     skos:prefLabel "EMOTION ASSOCIATED WITH MOTION BACKWARDS" .
 
-figss:EMOTION_ASSOCIATED_WITH_TEMPERATURE a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_TEMPERATURE,
-        figss:TERROR_ASSOCIATED_WITH_TEMPERATURE ;
+chroskos:EMOTION_ASSOCIATED_WITH_TEMPERATURE a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_TEMPERATURE,
+        chroskos:TERROR_ASSOCIATED_WITH_TEMPERATURE ;
     skos:prefLabel "EMOTION ASSOCIATED WITH TEMPERATURE" .
 
-figss:EMOTION_IS_LOCATION a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_IS_LOCATION,
-        figss:REPENTANCE_IS_LOCATION ;
+chroskos:EMOTION_IS_LOCATION a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_IS_LOCATION,
+        chroskos:REPENTANCE_IS_LOCATION ;
     skos:prefLabel "EMOTION IS LOCATION" .
 
-figss:EMOTION_IS_MOTION_UP a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:LAUGHTER_IS_MOTION_UP,
-        figss:SADNESS_IS_MOTION_UP ;
+chroskos:EMOTION_IS_MOTION_UP a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:LAUGHTER_IS_MOTION_UP,
+        chroskos:SADNESS_IS_MOTION_UP ;
     skos:prefLabel "EMOTION IS MOTION UP" .
 
-figss:EMOTION_IS_MOTION_UPWARDS a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:HOPE_IS_MOTION_UPWARDS,
-        figss:PRIDE_IS_MOTION_UPWARDS ;
+chroskos:EMOTION_IS_MOTION_UPWARDS a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:HOPE_IS_MOTION_UPWARDS,
+        chroskos:PRIDE_IS_MOTION_UPWARDS ;
     skos:prefLabel "EMOTION IS MOTION UPWARDS" .
 
-figss:EMOTION_IS_NARROWNESSANXIETY a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ENVY_IS_NARROWNESSANXIETY,
-        figss:JEALOUSY_IS_NARROWNESSANXIETY ;
+chroskos:EMOTION_IS_NARROWNESSANXIETY a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ENVY_IS_NARROWNESSANXIETY,
+        chroskos:JEALOUSY_IS_NARROWNESSANXIETY ;
     skos:prefLabel "EMOTION IS NARROWNESS/ANXIETY" .
 
-figss:EMOTION_IS_RESPECT a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:REVERENCE_IS_RESPECT,
-        figss:SHAME_IS_RESPECT ;
+chroskos:EMOTION_IS_RESPECT a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:REVERENCE_IS_RESPECT,
+        chroskos:SHAME_IS_RESPECT ;
     skos:prefLabel "EMOTION IS RESPECT" .
 
-figss:EMOTION_IS_STIRRING a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:LAUGHTER_IS_STIRRING,
-        figss:WORRY_IS_STIRRING ;
+chroskos:EMOTION_IS_STIRRING a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:LAUGHTER_IS_STIRRING,
+        chroskos:WORRY_IS_STIRRING ;
     skos:prefLabel "EMOTION IS STIRRING" .
 
-figss:EMOTION_IS_TURBIDNESS a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GRIEF_IS_TURBIDNESS,
-        figss:WORRY_IS_TURBIDNESS ;
+chroskos:EMOTION_IS_TURBIDNESS a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GRIEF_IS_TURBIDNESS,
+        chroskos:WORRY_IS_TURBIDNESS ;
     skos:prefLabel "EMOTION IS TURBIDNESS" .
 
-figss:EMOTION_USED_TO_REPAIR_WRONGDOING a skos:Concept ;
-    skos:broader figss:INSTRUMENTAL_METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:GUILT_USED_TO_REPAIR_WRONGDOING,
-        figss:REPENTANCE_USED_TO_REPAIR_WRONGDOING ;
+chroskos:EMOTION_USED_TO_REPAIR_WRONGDOING a skos:Concept ;
+    skos:broader chroskos:INSTRUMENTAL_METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:GUILT_USED_TO_REPAIR_WRONGDOING,
+        chroskos:REPENTANCE_USED_TO_REPAIR_WRONGDOING ;
     skos:prefLabel "EMOTION USED TO REPAIR WRONGDOING" .
 
-figss:INSTRUMENTAL_METONYMY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:EMOTION_USED_TO_REPAIR_DEBT,
-        figss:EMOTION_USED_TO_REPAIR_WRONGDOING ;
+chroskos:INSTRUMENTAL_METONYMY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:EMOTION_USED_TO_REPAIR_DEBT,
+        chroskos:EMOTION_USED_TO_REPAIR_WRONGDOING ;
     skos:prefLabel "INSTRUMENTAL METONYMY" .
 
-figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:FEAR_ASSOCIATED_WITH_LACK_OF_MOTION,
-        figss:MELANCHOLY_ASSOCIATED_WITH_LACK_OF_MOTION,
-        figss:SADNESS_ASSOCIATED_WITH_LACK_OF_MOTION ;
+chroskos:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:DUCT_IS_LIKE_PATH,
+        chroskos:MEMBRANE_IS_LIKE_TUNIC,
+        chroskos:MOLAR_TOOTH_IS_LIKE_MILLSTONE ;
+    skos:prefLabel "BODY PART FUNCTIONS LIKE EXTERNAL OBJECT" .
+
+chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:FEAR_ASSOCIATED_WITH_LACK_OF_MOTION,
+        chroskos:MELANCHOLY_ASSOCIATED_WITH_LACK_OF_MOTION,
+        chroskos:SADNESS_ASSOCIATED_WITH_LACK_OF_MOTION ;
     skos:prefLabel "EMOTION ASSOCIATED WITH LACK OF MOTION" .
 
-
-figss:EMOTION_IS_A_BURDEN a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AFFLICTION_IS_A_BURDEN,
-        figss:GRIEF_IS_A_BURDEN,
-        figss:GUILT_IS_A_BURDEN ;
+chroskos:EMOTION_IS_A_BURDEN a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AFFLICTION_IS_A_BURDEN,
+        chroskos:GRIEF_IS_A_BURDEN,
+        chroskos:GUILT_IS_A_BURDEN ;
     skos:prefLabel "EMOTION IS A BURDEN" .
 
-figss:EMOTION_IS_CAPTIVITY a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_CAPTIVITY,
-        figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AFFLICTION_IS_CAPTIVITY,
-        figss:EMOTION_IS_CAPTIVITY ;
+chroskos:EMOTION_IS_CAPTIVITY a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_CAPTIVITY,
+        chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AFFLICTION_IS_CAPTIVITY,
+        chroskos:EMOTION_IS_CAPTIVITY ;
     skos:prefLabel "EMOTION IS CAPTIVITY" .
 
-figss:EMOTION_IS_HEAT a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ANGER_IS_HEAT,
-        figss:ARDOUR_IS_HEAT,
-        figss:DISTRESS_IS_HEAT ;
+chroskos:EMOTION_IS_HEAT a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ANGER_IS_HEAT,
+        chroskos:ARDOUR_IS_HEAT,
+        chroskos:DISTRESS_IS_HEAT ;
     skos:prefLabel "EMOTION IS HEAT" .
 
-figss:RESULTATIVE_METONYMY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:EMOTION_RESULTS_IN_CAPTIVITY,
-        figss:EMOTION_RESULTS_IN_DEBT,
-        figss:EMOTION_RESULTS_IN_OPPONENT ;
+chroskos:RESULTATIVE_METONYMY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:EMOTION_RESULTS_IN_CAPTIVITY,
+        chroskos:EMOTION_RESULTS_IN_DEBT,
+        chroskos:EMOTION_RESULTS_IN_OPPONENT ;
     skos:prefLabel "RESULTATIVE METONYMY" .
 
-figss:EMOTION_IS_SUBSTANCE a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ANGER_IS_SUBSTANCE_SEND_OUT_POUR,
-        figss:EMOTION_IS_SUBSTANCE_IN_A_CONTAINER,
-        figss:JOY_IS_SUBSTANCE,
-        figss:JOY_IS_SUBSTANCEWIND ;
+chroskos:EMOTION_IS_SUBSTANCE a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ANGER_IS_SUBSTANCE_SEND_OUT_POUR,
+        chroskos:EMOTION_IS_SUBSTANCE_IN_A_CONTAINER,
+        chroskos:JOY_IS_SUBSTANCE,
+        chroskos:JOY_IS_SUBSTANCEWIND ;
     skos:prefLabel "EMOTION IS SUBSTANCE" .
 
-figss:EMOTION_IS_SWELLING a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ANGER_IS_SWELLING,
-        figss:CONFIDENCE_IS_SWELLING,
-        figss:PRIDE_IS_SWELLING,
-        figss:RAGE_IS_SWELLING ;
+chroskos:EMOTION_IS_SWELLING a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ANGER_IS_SWELLING,
+        chroskos:CONFIDENCE_IS_SWELLING,
+        chroskos:PRIDE_IS_SWELLING,
+        chroskos:RAGE_IS_SWELLING ;
     skos:prefLabel "EMOTION IS SWELLING" .
 
-figss:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
-    skos:broader figss:METONYMY ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AFFLICTION_ASSOCIATED_WITH_LACK_OF_ENERGY,
-        figss:COMPASSION_ASSOCIATED_WITH_LACK_OF_ENERGY,
-        figss:DISGUST_ASSOCIATED_WITH_LACK_OF_ENERGY,
-        figss:FEAR_ASSOCIATED_WITH_LACK_OF_ENERGY,
-        figss:SADNESS_ASSOCIATED_WITH_LACK_OF_ENERGY ;
-    skos:prefLabel "EMOTION ASSOCIATED WITH LACK OF ENERGY" .
-
-figss:EMOTION_IS_FIRE a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_FIRE,
-        figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ANGER_IS_FIRE,
-        figss:ARDOUR_IS_FIRE,
-        figss:EMOTION_IS_FIRE,
-        figss:ENVY_IS_FIRE ;
+chroskos:EMOTION_IS_FIRE a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_FIRE,
+        chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ANGER_IS_FIRE,
+        chroskos:ARDOUR_IS_FIRE,
+        chroskos:EMOTION_IS_FIRE,
+        chroskos:ENVY_IS_FIRE ;
     skos:prefLabel "EMOTION IS FIRE" .
 
-figss:EMOTION_IS_NARROWNESS a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AFFLICTION_IS_NARROWNESS,
-        figss:ANXIETY_IS_NARROWNESS,
-        figss:DISTRESS_IS_NARROWNESS,
-        figss:GRIEF_IS_NARROWNESS,
-        figss:TROUBLE_IS_NARROWNESS ;
+chroskos:EMOTION_IS_NARROWNESS a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AFFLICTION_IS_NARROWNESS,
+        chroskos:ANXIETY_IS_NARROWNESS,
+        chroskos:DISTRESS_IS_NARROWNESS,
+        chroskos:GRIEF_IS_NARROWNESS,
+        chroskos:TROUBLE_IS_NARROWNESS ;
     skos:prefLabel "EMOTION IS NARROWNESS" .
 
-figss:EMOTION_IS_OPPONENT a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_OPPONENT,
-        figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AFFLICTION_IS_PERSECUTION,
-        figss:DISTRESS_IS_OPPONENT,
-        figss:EMOTION_IS_OPPONENT,
-        figss:FEAR_IS_OPPONENT,
-        figss:TERROR_IS_OPPONENT ;
+chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AFFLICTION_ASSOCIATED_WITH_LACK_OF_ENERGY,
+        chroskos:COMPASSION_ASSOCIATED_WITH_LACK_OF_ENERGY,
+        chroskos:DISGUST_ASSOCIATED_WITH_LACK_OF_ENERGY,
+        chroskos:FEAR_ASSOCIATED_WITH_LACK_OF_ENERGY,
+        chroskos:SADNESS_ASSOCIATED_WITH_LACK_OF_ENERGY ;
+    skos:prefLabel "EMOTION ASSOCIATED WITH LACK OF ENERGY" .
+
+chroskos:EMOTION_IS_OPPONENT a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_OPPONENT,
+        chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AFFLICTION_IS_PERSECUTION,
+        chroskos:DISTRESS_IS_OPPONENT,
+        chroskos:EMOTION_IS_OPPONENT,
+        chroskos:FEAR_IS_OPPONENT,
+        chroskos:TERROR_IS_OPPONENT ;
     skos:prefLabel "EMOTION IS OPPONENT" .
 
-figss:EMOTION_IS_ENERGYSTRENGTH a skos:Concept ;
-    dc:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
-    skos:broader figss:EMOTION_IS_ENERGYSTRENGTH,
-        figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:ANGER_IS_ENERGYSTRENGTH,
-        figss:ANXIETY_IS_ENERGYSTRENGTH,
-        figss:EMOTION_IS_ENERGYSTRENGTH,
-        figss:ENVY_IS_ENERGYSTRENGTH,
-        figss:FERVOUR_IS_ENERGYSTRENGTH,
-        figss:JEALOUSY_IS_ENERGYSTRENGTH,
-        figss:ZEAL_IS_ENERGYSTRENGTH ;
+chroskos:EMOTION_IS_ENERGYSTRENGTH a skos:Concept ;
+    dct:creator "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)" ;
+    skos:broader chroskos:EMOTION_IS_ENERGYSTRENGTH,
+        chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ANGER_IS_ENERGYSTRENGTH,
+        chroskos:ANXIETY_IS_ENERGYSTRENGTH,
+        chroskos:EMOTION_IS_ENERGYSTRENGTH,
+        chroskos:ENVY_IS_ENERGYSTRENGTH,
+        chroskos:FERVOUR_IS_ENERGYSTRENGTH,
+        chroskos:JEALOUSY_IS_ENERGYSTRENGTH,
+        chroskos:ZEAL_IS_ENERGYSTRENGTH ;
     skos:prefLabel "EMOTION IS ENERGY/STRENGTH" .
 
-figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT skos:broader figss:METONYMY .
+chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT a skos:Concept ;
+    skos:broader chroskos:METONYMY ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:ANUS_IS_LIKE_RING,
+        chroskos:BACKBONE_IS_LIKE_THORN,
+        chroskos:CANINE_IS_LIKE_DOG_TOOTH,
+        chroskos:FOLLICLE_IS_LIKE_SEEDSACK,
+        chroskos:FRECKLE_IS_LIKE_LENTIL,
+        chroskos:KNEECAP_IS_LIKE_SMALL_BOWL,
+        chroskos:PENIS_IS_LIKE_STALK,
+        chroskos:SCROTUM_IS_LIKE_LEATHER_SACK_FOR_ARROWS,
+        chroskos:SHIN_BONE_IS_LIKE_FLUTE,
+        chroskos:TONSIL_IS_LIKE_POLE ;
+    skos:prefLabel "BODY PART IS LIKE EXTERNAL OBJECT" .
 
-figss:EMOTION_IS_WOUND a skos:Concept ;
-    skos:broader figss:METAPHOR ;
-    skos:inScheme figss: ;
-    skos:narrower figss:AFFLICTION_IS_WOUNDBREAK,
-        figss:AFFLICTION_IS_WOUNDPAIN,
-        figss:AFFLICTION_IS_WOUNDPANG,
-        figss:AFFLICTION_IS_WOUNDSICKNESS,
-        figss:ANXIETY_IS_WOUNDPANG,
-        figss:FEAR_IS_WOUNDBREAK,
-        figss:FEAR_IS_WOUNDPAIN,
-        figss:FEAR_IS_WOUNDPANG,
-        figss:GRIEF_IS_WOUND,
-        figss:GRIEF_IS_WOUND_IN_THE_CHEST,
-        figss:HATRED_IS_WOUNDPAIN,
-        figss:SORROW_IS_WOUND ;
+chroskos:BODY_PART_IS_OBJECT a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:prefLabel "BODY PART IS OBJECT" .
+
+chroskos:EMOTION_IS_WOUND a skos:Concept ;
+    skos:broader chroskos:METAPHOR ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:AFFLICTION_IS_WOUNDBREAK,
+        chroskos:AFFLICTION_IS_WOUNDPAIN,
+        chroskos:AFFLICTION_IS_WOUNDPANG,
+        chroskos:AFFLICTION_IS_WOUNDSICKNESS,
+        chroskos:ANXIETY_IS_WOUNDPANG,
+        chroskos:FEAR_IS_WOUNDBREAK,
+        chroskos:FEAR_IS_WOUNDPAIN,
+        chroskos:FEAR_IS_WOUNDPANG,
+        chroskos:GRIEF_IS_WOUND,
+        chroskos:GRIEF_IS_WOUND_IN_THE_CHEST,
+        chroskos:HATRED_IS_WOUNDPAIN,
+        chroskos:SORROW_IS_WOUND ;
     skos:prefLabel "EMOTION IS WOUND" .
 
-figss:METAPHOR a skos:Concept ;
-    skos:inScheme figss:;
-    skos:narrower figss:DISEASE_IS_DARKNESSEXTERNAL_CONCEPT,
-        figss:DISEASE_IS_IMPERFECTION,
-        figss:EMOTION_IS_A_BELLYSWELLING,
-        figss:EMOTION_IS_A_BLOWING_WIND,
-        figss:EMOTION_IS_A_BURDEN,
-        figss:EMOTION_IS_A_DIRTY_OBJECT,
-        figss:EMOTION_IS_A_HIDDEN_OBJECT,
-        figss:EMOTION_IS_A_LIQUID_SUBSTANCE,
-        figss:EMOTION_IS_A_MIXED_SUBSTANCE,
-        figss:EMOTION_IS_CAPTIVITY,
-        figss:EMOTION_IS_CHANGE_IN_SIZE,
-        figss:EMOTION_IS_DARKNESS,
-        figss:EMOTION_IS_DISTANCE,
-        figss:EMOTION_IS_ENERGYSTRENGTH,
-        figss:EMOTION_IS_FIRE,
-        figss:EMOTION_IS_HEAT,
-        figss:EMOTION_IS_HEAVINESS,
-        figss:EMOTION_IS_INTOXICATION,
-        figss:EMOTION_IS_LOCATION,
-        figss:EMOTION_IS_MADNESS,
-        figss:EMOTION_IS_MITIGATION,
-        figss:EMOTION_IS_MOTION_UP,
-        figss:EMOTION_IS_MOTION_UPWARDS,
-        figss:EMOTION_IS_NARROWNESS,
-        figss:EMOTION_IS_NARROWNESSANXIETY,
-        figss:EMOTION_IS_NOT_HEAVY,
-        figss:EMOTION_IS_OPPONENT,
-        figss:EMOTION_IS_PAIN,
-        figss:EMOTION_IS_PRICKING,
-        figss:EMOTION_IS_QUICK_MOTION,
-        figss:EMOTION_IS_RESPECT,
-        figss:EMOTION_IS_SLOW_MOTION,
-        figss:EMOTION_IS_STIFF,
-        figss:EMOTION_IS_STIRRING,
-        figss:EMOTION_IS_SUBSTANCE,
-        figss:EMOTION_IS_SUBSTANCE_DISSOLVING,
-        figss:EMOTION_IS_SWELLING,
-        figss:EMOTION_IS_TALLBIG,
-        figss:EMOTION_IS_TURBIDNESS,
-        figss:EMOTION_IS_WOUND ;
+chroskos:METAPHOR a skos:Concept ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:DISEASE_IS_DARKNESSEXTERNAL_CONCEPT,
+        chroskos:DISEASE_IS_IMPERFECTION,
+        chroskos:EMOTION_IS_A_BELLYSWELLING,
+        chroskos:EMOTION_IS_A_BLOWING_WIND,
+        chroskos:EMOTION_IS_A_BURDEN,
+        chroskos:EMOTION_IS_A_DIRTY_OBJECT,
+        chroskos:EMOTION_IS_A_HIDDEN_OBJECT,
+        chroskos:EMOTION_IS_A_LIQUID_SUBSTANCE,
+        chroskos:EMOTION_IS_A_MIXED_SUBSTANCE,
+        chroskos:EMOTION_IS_CAPTIVITY,
+        chroskos:EMOTION_IS_CHANGE_IN_SIZE,
+        chroskos:EMOTION_IS_DARKNESS,
+        chroskos:EMOTION_IS_DISTANCE,
+        chroskos:EMOTION_IS_ENERGYSTRENGTH,
+        chroskos:EMOTION_IS_FIRE,
+        chroskos:EMOTION_IS_HEAT,
+        chroskos:EMOTION_IS_HEAVINESS,
+        chroskos:EMOTION_IS_INTOXICATION,
+        chroskos:EMOTION_IS_LOCATION,
+        chroskos:EMOTION_IS_MADNESS,
+        chroskos:EMOTION_IS_MITIGATION,
+        chroskos:EMOTION_IS_MOTION_UP,
+        chroskos:EMOTION_IS_MOTION_UPWARDS,
+        chroskos:EMOTION_IS_NARROWNESS,
+        chroskos:EMOTION_IS_NARROWNESSANXIETY,
+        chroskos:EMOTION_IS_NOT_HEAVY,
+        chroskos:EMOTION_IS_OPPONENT,
+        chroskos:EMOTION_IS_PAIN,
+        chroskos:EMOTION_IS_PRICKING,
+        chroskos:EMOTION_IS_QUICK_MOTION,
+        chroskos:EMOTION_IS_RESPECT,
+        chroskos:EMOTION_IS_SLOW_MOTION,
+        chroskos:EMOTION_IS_STIFF,
+        chroskos:EMOTION_IS_STIRRING,
+        chroskos:EMOTION_IS_SUBSTANCE,
+        chroskos:EMOTION_IS_SUBSTANCE_DISSOLVING,
+        chroskos:EMOTION_IS_SWELLING,
+        chroskos:EMOTION_IS_TALLBIG,
+        chroskos:EMOTION_IS_TURBIDNESS,
+        chroskos:EMOTION_IS_WOUND ;
     skos:prefLabel "METAPHOR" ;
-    skos:topConceptOf figss: .
+    skos:topConceptOf chroskos:,
+        chroskos:figss .
 
-figss:METONYMY a skos:Concept ;
-    skos:inScheme figss: ;
-    skos:narrower figss:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT,
-        figss:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
-        figss:CAUSATIVE_METONYMY,
-        figss:DISEASE_IS_LIKE_EXTERNAL_OBJECT,
-        figss:EMOTION_ASSOCIATED_WITH_AFFLICTION,
-        figss:EMOTION_ASSOCIATED_WITH_ANGER,
-        figss:EMOTION_ASSOCIATED_WITH_BAD_OPINION_ON_STH,
-        figss:EMOTION_ASSOCIATED_WITH_CHANGE_COLOUR,
-        figss:EMOTION_ASSOCIATED_WITH_COMFORT,
-        figss:EMOTION_ASSOCIATED_WITH_EASYNESS,
-        figss:EMOTION_ASSOCIATED_WITH_EMPATHY,
-        figss:EMOTION_ASSOCIATED_WITH_EVIL,
-        figss:EMOTION_ASSOCIATED_WITH_FRAUD,
-        figss:EMOTION_ASSOCIATED_WITH_HONOUR,
-        figss:EMOTION_ASSOCIATED_WITH_HOPELESSNESS,
-        figss:EMOTION_ASSOCIATED_WITH_IMPROVEMENT,
-        figss:EMOTION_ASSOCIATED_WITH_IN_THE_MIND,
-        figss:EMOTION_ASSOCIATED_WITH_JUMP,
-        figss:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY,
-        figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION,
-        figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENT,
-        figss:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY,
-        figss:EMOTION_ASSOCIATED_WITH_LIKING,
-        figss:EMOTION_ASSOCIATED_WITH_MALICE,
-        figss:EMOTION_ASSOCIATED_WITH_MENTAL_DISTRESS,
-        figss:EMOTION_ASSOCIATED_WITH_MERCY,
-        figss:EMOTION_ASSOCIATED_WITH_MOTION_BACK,
-        figss:EMOTION_ASSOCIATED_WITH_MOTION_BACKWARDS,
-        figss:EMOTION_ASSOCIATED_WITH_MOTION_DOWNWARDS,
-        figss:EMOTION_ASSOCIATED_WITH_MOTION_TO_AND_FRO,
-        figss:EMOTION_ASSOCIATED_WITH_PALLOR,
-        figss:EMOTION_ASSOCIATED_WITH_PASSSION,
-        figss:EMOTION_ASSOCIATED_WITH_PROSPERITY,
-        figss:EMOTION_ASSOCIATED_WITH_REVERENCE,
-        figss:EMOTION_ASSOCIATED_WITH_RIGIDITY,
-        figss:EMOTION_ASSOCIATED_WITH_SADNESS,
-        figss:EMOTION_ASSOCIATED_WITH_SHOUT,
-        figss:EMOTION_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS,
-        figss:EMOTION_ASSOCIATED_WITH_TEMPERATURE,
-        figss:EMOTION_ASSOCIATED_WITH_TIMIDITY,
-        figss:EMOTION_ASSOCIATED_WITH_TORPOR,
-        figss:EMOTION_ASSOCIATED_WITH_TO_SHRINK,
-        figss:EMOTION_ASSOCIATED_WITH_TREMBLING,
-        figss:EMOTION_ASSOCIATED_WITH_UNCERTAINTY,
-        figss:EMOTION_ASSOCIATED_WITH_USAGE,
-        figss:EMOTION_ASSOCIATED_WITH_WITHOUT_GLORY,
-        figss:EMOTION_ASSOCIATED_WITH_WITHOUT_HOPE,
-        figss:EMOTION_ASSOCIATED_WITH_WITHOUT_PROTECTION,
-        figss:EMOTION_IS_OVER-HEARING,
-        figss:EMOTION_IS_OVERLOOKING,
-        figss:INSTRUMENTAL_METONYMY,
-        figss:MENSTRUAL_CYCLE_IS_MONTHLY_EVENT,
-        figss:RESULTATIVE_METONYMY ;
+chroskos:METONYMY a skos:Concept ;
+    skos:inScheme chroskos: ;
+    skos:narrower chroskos:BODY_PART_FUNCTIONS_LIKE_EXTERNAL_OBJECT,
+        chroskos:BODY_PART_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:CAUSATIVE_METONYMY,
+        chroskos:DISEASE_IS_LIKE_EXTERNAL_OBJECT,
+        chroskos:EMOTION_ASSOCIATED_WITH_AFFLICTION,
+        chroskos:EMOTION_ASSOCIATED_WITH_ANGER,
+        chroskos:EMOTION_ASSOCIATED_WITH_BAD_OPINION_ON_STH,
+        chroskos:EMOTION_ASSOCIATED_WITH_CHANGE_COLOUR,
+        chroskos:EMOTION_ASSOCIATED_WITH_COMFORT,
+        chroskos:EMOTION_ASSOCIATED_WITH_EASYNESS,
+        chroskos:EMOTION_ASSOCIATED_WITH_EMPATHY,
+        chroskos:EMOTION_ASSOCIATED_WITH_EVIL,
+        chroskos:EMOTION_ASSOCIATED_WITH_FRAUD,
+        chroskos:EMOTION_ASSOCIATED_WITH_HONOUR,
+        chroskos:EMOTION_ASSOCIATED_WITH_HOPELESSNESS,
+        chroskos:EMOTION_ASSOCIATED_WITH_IMPROVEMENT,
+        chroskos:EMOTION_ASSOCIATED_WITH_IN_THE_MIND,
+        chroskos:EMOTION_ASSOCIATED_WITH_JUMP,
+        chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_ENERGY,
+        chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOTION,
+        chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENT,
+        chroskos:EMOTION_ASSOCIATED_WITH_LACK_OF_MOVEMENTCAPTIVITY,
+        chroskos:EMOTION_ASSOCIATED_WITH_LIKING,
+        chroskos:EMOTION_ASSOCIATED_WITH_MALICE,
+        chroskos:EMOTION_ASSOCIATED_WITH_MENTAL_DISTRESS,
+        chroskos:EMOTION_ASSOCIATED_WITH_MERCY,
+        chroskos:EMOTION_ASSOCIATED_WITH_MOTION_BACK,
+        chroskos:EMOTION_ASSOCIATED_WITH_MOTION_BACKWARDS,
+        chroskos:EMOTION_ASSOCIATED_WITH_MOTION_DOWNWARDS,
+        chroskos:EMOTION_ASSOCIATED_WITH_MOTION_TO_AND_FRO,
+        chroskos:EMOTION_ASSOCIATED_WITH_PALLOR,
+        chroskos:EMOTION_ASSOCIATED_WITH_PASSSION,
+        chroskos:EMOTION_ASSOCIATED_WITH_PROSPERITY,
+        chroskos:EMOTION_ASSOCIATED_WITH_REVERENCE,
+        chroskos:EMOTION_ASSOCIATED_WITH_RIGIDITY,
+        chroskos:EMOTION_ASSOCIATED_WITH_SADNESS,
+        chroskos:EMOTION_ASSOCIATED_WITH_SHOUT,
+        chroskos:EMOTION_ASSOCIATED_WITH_SLOW_MOTIONSLUGGISHNESSDARKNESS,
+        chroskos:EMOTION_ASSOCIATED_WITH_TEMPERATURE,
+        chroskos:EMOTION_ASSOCIATED_WITH_TIMIDITY,
+        chroskos:EMOTION_ASSOCIATED_WITH_TORPOR,
+        chroskos:EMOTION_ASSOCIATED_WITH_TO_SHRINK,
+        chroskos:EMOTION_ASSOCIATED_WITH_TREMBLING,
+        chroskos:EMOTION_ASSOCIATED_WITH_UNCERTAINTY,
+        chroskos:EMOTION_ASSOCIATED_WITH_USAGE,
+        chroskos:EMOTION_ASSOCIATED_WITH_WITHOUT_GLORY,
+        chroskos:EMOTION_ASSOCIATED_WITH_WITHOUT_HOPE,
+        chroskos:EMOTION_ASSOCIATED_WITH_WITHOUT_PROTECTION,
+        chroskos:EMOTION_IS_OVER-HEARING,
+        chroskos:EMOTION_IS_OVERLOOKING,
+        chroskos:INSTRUMENTAL_METONYMY,
+        chroskos:MENSTRUAL_CYCLE_IS_MONTHLY_EVENT,
+        chroskos:RESULTATIVE_METONYMY ;
     skos:prefLabel "METONYMY" ;
-    skos:topConceptOf figss: .
+    skos:topConceptOf chroskos:,
+        chroskos:figss .
 
-figss: a skos:ConceptScheme ;
-    dc:title "Figurative Semantic Shift Taxonomy (FigSS)"@en;
-    dc:creator "Anas Fahad Khan",
+chroskos: a skos:ConceptScheme ;
+    dct:creator "Anas Fahad Khan",
         "Javier E. Díaz-Vera (ORCID 0000-0001-7251-2839)",
         "Paola Marongiu" ;
-    skos:hasTopConcept figss:METONYMY, figss:METAPHOR;
-    dct:license <https://creativecommons.org/licenses/by/4.0/>;
-    dc:description "A taxonomy of figurative language, including metaphor and metonymy, compiled from historical sources.";	
+    dct:description "A taxonomy of figurative language, including metaphor and metonymy, compiled from historical sources." ;
+    dct:hasVersion "1.1" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Figurative Semantic Shift Taxonomy (FigSS)"@en ;
+    skos:hasTopConcept chroskos:METAPHOR,
+        chroskos:METONYMY ;
     skos:prefLabel "FigSS"@en .
+
